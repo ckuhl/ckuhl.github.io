@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - '.github/workflows/docs.yml'
+jobs:
+  publish:
+    runs-on: 'ubuntu-latest'
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+    - name: install racket
+      uses: Bogdanp/setup-racket@v1.8.1
+      with:
+        architecture: 'x64'
+        distribution: 'full'
+        variant: 'CS'
+        version: 'stable'
+    - name: build docs
+      run: make docs
+    - name: push to gh-pages
+      uses: JamesIves/github-pages-deploy-action@v4.4.0
+      with:
+        folder: docs/keyring
+        branch: gh-pages
+
