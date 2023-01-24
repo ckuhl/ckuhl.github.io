@@ -1,26 +1,29 @@
+name: Build and Publish
+
 on:
   push:
     branches:
       - master
-    paths:
-      - 'src/**'
-      - '.github/workflows/docs.yml'
+
 jobs:
-  publish:
+  Publish:
     runs-on: 'ubuntu-latest'
     steps:
-    - name: checkout
+    - name: Check out repo
       uses: actions/checkout@master
-    - name: install racket
+
+    - name: Install Racket
       uses: Bogdanp/setup-racket@v1.8.1
       with:
         architecture: 'x64'
         distribution: 'full'
         variant: 'CS'
         version: 'stable'
-    - name: build docs
+
+    - name: Build site
       run: make docs
-    - name: push to gh-pages
+
+    - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
         folder: docs
