@@ -6,8 +6,18 @@ body {
 	background: #222;
 	background-image: url('../images/pipes.png');
 	font-family: Times New Roman, default;
-	color: white;
-	text-align: center;
+}
+
+txexpr  {
+	display: block;
+	background-color: #ffffff;
+	background-image: url('../images/journal_bk.gif');
+	background-repeat: repeat-y;
+	padding: 25px 25px 25px 75px;
+	width: 640px;
+
+	color: black;
+	text-align: left;
 }
 
 p {

@@ -23,6 +23,6 @@ jobs:
     - name: push to gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
-        folder: docs/keyring
-        branch: gh-pages
+        folder: docs
+        branch: docs
 
