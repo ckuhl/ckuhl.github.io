@@ -20,6 +20,9 @@ jobs:
         variant: 'CS'
         version: 'stable'
 
+    - name: Install Pollen
+      run: raco pkg install --auto pollen
+
     - name: Build site
       run: make
 
