@@ -21,7 +21,7 @@ jobs:
         version: 'stable'
 
     - name: Build site
-      run: make docs
+      run: make
 
     - name: Upload pages artifact
       id: upload
