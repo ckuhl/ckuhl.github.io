@@ -1,5 +1,6 @@
 # Built website
 docs/
+*.html
 
 # Compiled files
 compiled/

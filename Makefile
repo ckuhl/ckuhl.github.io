@@ -1,7 +1,12 @@
-docs/main.html: src/  ## Build site, default target
+docs/: src/  ## Build site, default target
+	raco pollen render --recursive ./src
 	raco pollen publish ./src ./docs
 
-.PHONY: local-workflow help
+.PHONY: clean local-workflow help
+
+clean:  ## Remove rendered HTML files
+	rm -rf docs
+	rf ./src/**/*.html
 
 local-workflow:  ## Run GitHub Actions locally
 	act --container-architecture linux/amd64
