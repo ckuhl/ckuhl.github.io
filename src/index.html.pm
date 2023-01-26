@@ -4,16 +4,24 @@
 
 ◊(txexpr
   (h1
-   (img #:src "./images/construction1.gif")
    "Under construction"
    (img #:src "./images/construction1.gif"))
- (p "Welcome to the personal web log of Christian Kuhl.")
- (h2 "Stuff I like working on")
- (ul
-  (li "Racket")
-  (li "Advent of Code"))
- (h2 "Neat things")
- (ul
-  (li "Words I had to look up")
-  (li "Pictures of birds")
-  (li "Blog posts, sometimes, maybe")))
+  (p "Welcome to the personal web log of Christian Kuhl.")
+  (hr)
+  (h2 "Things I've created")
+  (ul
+   (li
+    "a web log"
+    (img #:src "./images/new2.gif"))
+   (li "Code on " (a #:href "https://github.com/ckuhl" "GitHub")))
+  (hr)
+  (h2 "Stuff I like working on")
+  (ul
+   (li "Racket")
+   (li "Advent of Code"))
+  (hr)
+  (h2 "Neat things")
+  (ul
+   (li "Words I had to look up")
+   (li "Pictures of birds")
+   (li "Blog posts, sometimes, maybe")))
