@@ -8,7 +8,7 @@ body {
 	font-family: Times New Roman, default;
 }
 
-txexpr  {
+root {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('../images/journal_bk.gif');
@@ -22,4 +22,17 @@ txexpr  {
 
 p {
 	font-size: 18pt;
+}
+
+/* FIXME: This is a hack-ish. Should use flexbox instead */
+@media screen and (max-width: 600px) {
+	root {
+		display: block;
+		background-size: 200%;
+		background-repeat: repeat-y;
+		background-position: lef;
+		width: auto;
+		padding: 5px 5px 5px 40px;
+	}
+	h1, h2, p { font-size: small; }
 }
