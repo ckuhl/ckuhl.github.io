@@ -1,12 +1,12 @@
 #lang pollen
 
+◊(define-meta title "Chris' Web Log")
+
 ◊(txexpr
- (head (title "@ckuhl's Web Log"))
- (body
- (h1
-  (img #:src "./images/construction1.gif")
-  "Under construction"
-  (img #:src "./images/construction1.gif"))
+  (h1
+   (img #:src "./images/construction1.gif")
+   "Under construction"
+   (img #:src "./images/construction1.gif"))
  (p "Welcome to the personal web log of Christian Kuhl.")
  (h2 "Stuff I like working on")
  (ul
@@ -16,4 +16,4 @@
  (ul
   (li "Words I had to look up")
   (li "Pictures of birds")
-  (li "Blog posts, sometimes, maybe"))))
+  (li "Blog posts, sometimes, maybe")))
