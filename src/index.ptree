@@ -1,7 +1,7 @@
 #lang pollen
 
 index.html
-◊pollen-notes/index.html{
-	pollen-notes/filetypes.html
-	pollen-notes/subdir.html
+◊notes-on-pollen/index.html{
+	notes-on-pollen/filetypes.html
+	notes-on-pollen/subdir.html
 }

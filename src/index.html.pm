@@ -11,15 +11,16 @@
 ◊(hr)
 ◊(h2 "Things I've created")
 ◊(ul
-   (li "a web log")
-   (li
-    (a #:href "/pollen-notes" "notes on using pollen!")
-    (img #:src "./images/new2.gif"))
+   (li "My web log")
    (li "Code on " (a #:href "https://github.com/ckuhl" "GitHub")))
 ◊(hr)
 ◊(h2 "Stuff I like working on")
 ◊(ul
-   (li "Racket")
+   (li "Racket"
+    (ul
+     (li
+     (a #:href "/notes-on-pollen" "Notes on using pollen!")
+     (img #:src "./images/new2.gif"))))
    (li "Advent of Code"))
 ◊(hr)
 ◊(h2 "Neat things")
