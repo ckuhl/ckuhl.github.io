@@ -22,7 +22,15 @@ body {
 	background-image: url('../images/pipes.png');
 	font-family: "Times New Roman", Times, serif;
 }
+ul {
+	/* https://www.fgdc.gov/training/images/ */
+	list-style-image: url('../images/blue_ball.jpg');
+}
 
+ul li ul {
+	/* https://www.fgdc.gov/training/images/ */
+	list-style-image: url('../images/bullet-orange.gif');
+}
 /*
 Originally for the root element, but that's not HTML-kosher...
 This really represents the default content that Pollen spits out. I suppose this
