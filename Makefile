@@ -1,5 +1,3 @@
-.DEFAULT_GOAL := help
-
 docs/: src/  ## Build site, default target
 	raco pollen render --recursive ./src
 	raco pollen publish ./src ./docs
