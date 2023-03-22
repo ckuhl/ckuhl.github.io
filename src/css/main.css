@@ -29,7 +29,7 @@ This really represents the default content that Pollen spits out. I suppose this
 should really be a
 TODO: Fix the way styles are scoped to better reflect the document structure.
 */
-body div {
+body > div, body > footer {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('../images/journal_bk.gif');
@@ -39,14 +39,20 @@ body div {
 
 	color: black;
 	text-align: left;
+}
 
+body > div {
 	/* Entirely stylistic choice */
 	min-height: 80vh;
 }
 
+body > footer {
+	text-align: center;
+}
+
 /* FIXME: This is a hack-ish. Should use flexbox instead */
 @media screen and (max-width: 600px) {
-	body div {
+	body > div {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
