@@ -13,7 +13,7 @@ jgs \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 */
 
-:root {
+:pollen {
 	cursor: url('../images/pointer.png'), default;
 }
 
@@ -23,7 +23,7 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
-content {
+pollen {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('../images/journal_bk.gif');
@@ -40,7 +40,7 @@ content {
 
 /* FIXME: This is a hack-ish. Should use flexbox instead */
 @media screen and (max-width: 600px) {
-	content {
+	pollen {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
