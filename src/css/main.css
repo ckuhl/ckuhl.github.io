@@ -13,7 +13,7 @@ jgs \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 */
 
-:pollen {
+* {
 	cursor: url('../images/pointer.png'), default;
 }
 
@@ -23,7 +23,13 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
-pollen {
+/*
+Originally for the root element, but that's not HTML-kosher...
+This really represents the default content that Pollen spits out. I suppose this
+should really be a
+TODO: Fix the way styles are scoped to better reflect the document structure.
+*/
+body div {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('../images/journal_bk.gif');
@@ -40,7 +46,7 @@ pollen {
 
 /* FIXME: This is a hack-ish. Should use flexbox instead */
 @media screen and (max-width: 600px) {
-	pollen {
+	body div {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
