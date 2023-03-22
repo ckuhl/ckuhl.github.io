@@ -23,7 +23,7 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
-root {
+content {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('../images/journal_bk.gif');
@@ -40,7 +40,7 @@ root {
 
 /* FIXME: This is a hack-ish. Should use flexbox instead */
 @media screen and (max-width: 600px) {
-	root {
+	content {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
