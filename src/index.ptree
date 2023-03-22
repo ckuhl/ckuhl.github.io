@@ -1,7 +1,13 @@
 #lang pollen
 
 index.html
+◊things/index.html{
+	things/web-site.html
+}
 ◊notes-on-pollen/index.html{
 	notes-on-pollen/filetypes.html
 	notes-on-pollen/subdir.html
+}
+◊weblog/index.html{
+	weblog/web-site.html
 }

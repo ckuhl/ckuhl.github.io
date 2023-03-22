@@ -15,15 +15,6 @@ creating something no one else would _want_ to create.
 - Document exactly how Pollen works
     - Or at least, well enough that I understand it
 
-## Inspirations (i.e. similar looking sites)
-- https://solaria.neocities.org/
-- https://cyber.dabamos.de/index.html
-
-## References (i.e. other Racket sites)
-- https://github.com/otherjoel/try-pollen/
-- https://github.com/malcolmstill/mstill.io/
-- :star: https://github.com/rymaju/pollen-ryanjung.dev/
-
 
 ## Source (for gifs, etc.)
 - http://cs.gettysburg.edu/~duncjo01/archive/patterns/geocities/backgrounds/Generic/
