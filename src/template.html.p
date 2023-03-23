@@ -8,16 +8,20 @@
 <body>
     ◊(->html doc)
 
-<!-- FIXME: This is definitely not the best arrangement of things -->
 
 <footer>
-<!--
+<!-- TODO: Determine if / where to put little nav buttons
 <div class="navigation">
-        <a href="/">Home</a>
+◊when/splice[(previous here)]{
+        <span>&larr; ◊|(->html (node->link (previous here)))|</span>
+}
+        <span>&uarr; <a href="/">Home</a></span>
+◊when/splice[(next here)]{
+        <span>◊|(->html (node->link (next here)))| &rarr;</span>
+}
 </div>
-<br>
 -->
-<div class="entertainment">
+<div>
         <a href="https://validator.w3.org/check/referer">
                 <img src="/images/htmlval2.gif" alt="Validate HTML" width="88" height="31">
         </a>
