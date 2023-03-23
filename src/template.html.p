@@ -23,7 +23,10 @@
 -->
 <div>
         <a href="https://validator.w3.org/check/referer">
-                <img src="/images/htmlval2.gif" alt="Validate HTML" width="88" height="31">
+                <img src="/images/htmlval2.gif" alt="Valid HTML!" width="88" height="31">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="/images/w3-valid-css.gif" alt="Valid CSS!" width="88" height="31">
         </a>
 </div>
 </footer>
