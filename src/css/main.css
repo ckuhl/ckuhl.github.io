@@ -60,7 +60,7 @@ body > footer {
 
 /* FIXME: This is a hack-ish. Should use flexbox instead */
 @media screen and (max-width: 600px) {
-	body > div {
+	body > div, body > footer {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
