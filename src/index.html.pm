@@ -24,10 +24,5 @@
      (li
      (a #:href "/notes-on-pollen" "Notes on using pollen")
      (img #:src "./images/Updated.gif" #:alt "Updated!"))))
-   (li "Advent of Code"))
-◊(hr)
-◊(h2 "Neat things")
-◊(ul
-   (li "Words I had to look up")
-   (li "Pictures of birds")
-   (li "Blog posts, sometimes, maybe"))
+   (li "More to come..."))
+
