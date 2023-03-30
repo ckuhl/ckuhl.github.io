@@ -12,10 +12,11 @@ creating something no one else would _want_ to create.
 ## To-do list (i.e. things that may never get done)
 - Add more pages (content?)
     - Blog, content pages in subdirectories?
-- Document exactly how Pollen works
-    - Or at least, well enough that I understand it
+    - Arrange in a certain booklike fashion
+    - Document exactly how Pollen works
+        - Or at least, well enough that I understand it
+- More totally radical 88x31px footer images
 
 
 ## Source (for gifs, etc.)
 - http://cs.gettysburg.edu/~duncjo01/archive/patterns/geocities/backgrounds/Generic/
-
