@@ -14,23 +14,30 @@ jgs \\|//   \\|///  \\\|//\\\|/// \|///  \\\|//  \\|//  \\\|//
 */
 
 * {
-	cursor: url('../images/pointer.png'), default;
+	cursor: url('/images/pointer.png'), default;
 }
 
 body {
 	background: #222;
-	background-image: url('../images/pipes.png');
+	background-image: url('/images/pipes.png');
 	font-family: "Times New Roman", Times, serif;
 }
 ul {
-	/* https://www.fgdc.gov/training/images/ */
-	list-style-image: url('../images/blue_ball.jpg');
+	list-style-image: url('/images/ball_red.gif');
 }
 
 ul li ul {
-	/* https://www.fgdc.gov/training/images/ */
-	list-style-image: url('../images/bullet-orange.gif');
+	list-style-image: url('/images/ball_orange.gif');
 }
+
+ul li ul li ul {
+	list-style-image: url('/images/ball_yellow.gif');
+}
+
+ul li ul li ul li ul {
+	list-style-image: url('/images/ball_green.gif');
+}
+
 /*
 Originally for the root element, but that's not HTML-kosher...
 This really represents the default content that Pollen spits out. I suppose this
@@ -40,7 +47,7 @@ TODO: Fix the way styles are scoped to better reflect the document structure.
 body > div, body > footer {
 	display: block;
 	background-color: #ffffff;
-	background-image: url('../images/journal_bk.gif');
+	background-image: url('/images/journal_bk.gif');
 	background-repeat: repeat-y;
 	padding: 25px 25px 25px 75px;
 	width: 640px;

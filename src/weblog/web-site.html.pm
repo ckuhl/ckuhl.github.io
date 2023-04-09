@@ -4,8 +4,8 @@
 
 ◊h1{Why a web log, why now?}
 
-The machine can't tell me what to, maaan.
+◊p{
+TODO: Summarize bulleted notes into ✨ content ✨
+}
 
-Company blog? Cross-linking?
-
-It's fun and confuses people?
+◊; And besides, someone needs to generate training data for the AIs

@@ -1,6 +1,7 @@
 #lang pollen
 
 index.html
+about.html
 ◊things/index.html{
 	things/web-site.html
 }
