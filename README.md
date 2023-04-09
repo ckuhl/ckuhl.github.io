@@ -9,6 +9,17 @@ answer is an unsatisfying 'because it's obscure and obtuse.'" When anything is
 possible and everything is a competition, sometimes joy can be found in
 creating something no one else would _want_ to create.
 
+
+## Structure
+
+If you're unfamiliar with Pollen sites (i.e. a normal human), the basic structure is:
+
+- Structure roughly reflects project structure
+- `./src/index.ptree` firmly reflects project structure
+- `./src/pollen.rkt` defines fun metadata and metafunctions
+- And finally, `*.p{,m,p}` files are pages rendered in output
+
+
 ## To-do list (i.e. things that may never get done)
 - Add more pages (content?)
     - Blog, content pages in subdirectories?
