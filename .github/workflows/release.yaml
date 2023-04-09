@@ -4,12 +4,13 @@ on:
   push:
     branches:
       - master
+      - main
 
 jobs:
   Build:
     runs-on: 'ubuntu-latest'
     steps:
-    - name: Check out repo
+    - name: Check out repository
       uses: actions/checkout@master
 
     - name: Install Racket
@@ -33,7 +34,7 @@ jobs:
         path: docs
 
 
-  Deploy:
+  Publish:
     # Add a dependency to the build job
     needs: Build
 
