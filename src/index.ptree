@@ -2,13 +2,14 @@
 
 index.html
 about.html
-◊things/index.html{
-	things/web-site.html
+◊weblog/index.html{
+	◊; 2023-04-08
+	weblog/web-site.html
 }
 ◊notes-on-pollen/index.html{
 	notes-on-pollen/filetypes.html
 	notes-on-pollen/subdir.html
 }
-◊weblog/index.html{
-	weblog/web-site.html
+◊things/index.html{
+	things/web-site.html
 }
