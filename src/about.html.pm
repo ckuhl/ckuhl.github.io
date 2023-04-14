@@ -27,16 +27,19 @@ the world as well eh?
 
 ◊h1{Education}
 
-University of Waterloo & Wilfrid Laurier University
+◊(ul
+  (li "University of Waterloo :: Bachelor of Computer Science")
+  (li "Wilfrid Laurier Univerisity :: Bachelor of Business Administration"))
 
 
 ◊h1{Projects}
 
 
-Not much of note.
+Not much of note (yet).
 ◊(a #:href "https://github.com/ckuhl" "GitHub") speaks to most of what I've done.
 
 
 ◊h1{Technical skills}
 
-All the stuff.
+All the words. Care for DevOps-y stuff: Terraform et al, Kubernetes, all those
+modern things that everyone hates but accepts is better than the alternative.
