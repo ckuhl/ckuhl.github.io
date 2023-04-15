@@ -1,4 +1,4 @@
-# `ckuhl.github.io`
+# Chris Kuhl's Personal Site
 
 A strange static website written using Pollen, by way of Racket.
 
@@ -15,9 +15,8 @@ creating something no one else would _want_ to create.
 If you're unfamiliar with Pollen sites (i.e. a normal human), the basic structure is:
 
 - Structure roughly reflects project structure
-- `./src/index.ptree` firmly reflects project structure
-- `./src/pollen.rkt` defines fun metadata and metafunctions
-- And finally, `*.p{,m,p}` files are pages rendered in output
+- `./src/*` is the pollen site
+- `Makefile` does the needful
 
 
 ## To-do list (i.e. things that may never get done)
@@ -31,3 +30,4 @@ If you're unfamiliar with Pollen sites (i.e. a normal human), the basic structur
 
 ## Source (for gifs, etc.)
 - http://cs.gettysburg.edu/~duncjo01/archive/patterns/geocities/backgrounds/Generic/
+

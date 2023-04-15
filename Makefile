@@ -2,7 +2,7 @@ docs/: src/  ## Build site, default target
 	raco pollen render --recursive ./src
 	raco pollen publish ./src ./docs
 
-.PHONY: clean local-workflow help
+.PHONY: clean dev local-workflow help
 
 clean:  ## Remove rendered HTML files
 	rm -rf ./build
