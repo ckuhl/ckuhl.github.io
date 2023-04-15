@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "Why a web log, why now?")
+◊(define-meta title "Why a web log?")
 ◊(define-meta date "2023-04-08")
 
 

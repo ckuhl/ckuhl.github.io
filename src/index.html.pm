@@ -6,7 +6,7 @@
    "Under construction"
    (img #:src "./images/construction1.gif" #:alt "Construction barricade"))
 
-◊(p "Welcome to the personal web log of one Mr. " (a #:href "/about.html" "Christian Kuhl") ".")
+◊(p "Welcome to the personal web log of one " (a #:href "/about.html" "Christian Kuhl") ".")
 
 ◊(hr)
 
@@ -23,5 +23,5 @@
 
 ◊(hr)
 
-◊(h2 "Stuff I like working on")
+◊(h2 "Stuff I like")
 ◊(ul (li "More to come..."))

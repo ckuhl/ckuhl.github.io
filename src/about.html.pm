@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "About one Mr. @ckuhl")
+◊(define-meta title "About one Christian Kuhl")
 
 ◊(h1 "Chris/tian Kuhl")
 

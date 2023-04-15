@@ -6,13 +6,9 @@
 	<link rel="stylesheet" type="text/css" media="all" href="/css/main.css">
 </head>
 <body>
-
-	◊(->html doc)
-
-
-<footer>
-<hr/>
-<!-- TODO: Determine if / where to put little nav buttons
+<header>
+<!--
+FIXME: Need to figure out how to actually do naviagation. Eventually.
 <div class="navigation">
 ◊when/splice[(previous here)]{
 	<span>&larr; ◊|(->html (node->link (previous here)))|</span>
@@ -21,8 +17,15 @@
 ◊when/splice[(next here)]{
 	<span>◊|(->html (node->link (next here)))| &rarr;</span>
 }
-</div>
 -->
+</div>
+<hr/>
+</header>
+
+◊(->html doc)
+
+<footer>
+<hr/>
 <div>
 	<a href="https://validator.w3.org/check/referer">
 		<img src="/images/htmlval2.gif" alt="Valid HTML!" width="88" height="31">
