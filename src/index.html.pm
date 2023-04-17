@@ -24,4 +24,6 @@
 ◊(hr)
 
 ◊(h2 "Stuff I like")
-◊(ul (li "More to come..."))
+◊(ul
+   (li "An archived, long lost guide for the 3DS: " (a #:href "./archive/PCFG/Petit_Computer_Function_Guide.htm" "Petit Computer Function Guide"))
+   (li "...more things"))
