@@ -14,4 +14,8 @@
 
 ◊(h1 "Web log")
 
-◊(apply ul (map (compose li node->link) (children 'weblog/index.html)))
+◊(apply
+ ul
+ (map
+  (compose li node->link)
+  (reverse (children 'weblog/index.html))))
