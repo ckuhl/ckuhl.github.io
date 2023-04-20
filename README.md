@@ -41,3 +41,6 @@ structure is:
 
 - http://cs.gettysburg.edu/~duncjo01/archive/patterns/geocities/backgrounds/Generic/
 - [GifCities (as provided by Archive.org)](https://gifcities.org/)
+- https://solar.leo32345.com/
+    - For a cool website
+    - Similarly: https://solar.lowtechmagazine.com/
