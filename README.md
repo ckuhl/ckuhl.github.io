@@ -47,3 +47,15 @@ structure is:
 
 ### More Racket blogs
 - https://codeberg.org/dangermuse/dangermuse-blog/
+
+- https://andregarzia.com/2022/05/How-this-blog-works-or-embracing-chaos.html
+- https://www.skybluetrades.net/blog/2021/05/2021-05-16-moving-to-pollen.html
+- https://ryanjung.dev/thoughts/pollen.html
+
+
+### Wip notes: RSS and ATOM
+- https://github.com/otherjoel/try-pollen/blob/master/feed.xml.pp
+- https://codeberg.org/dangermuse/dangermuse-blog/src/branch/main/feed.xml.pp
+- https://www.google.com/search?client=firefox-b-d&q=%22feed.xml.pp%22
+- http://web.archive.org/web/20201018101014/http://blevs.github.io/pollen-feed-tutorial/
+    - https://github.com/Blevs/pollen-feed-tutorial/blob/master/search-doc.rkt

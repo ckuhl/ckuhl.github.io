@@ -18,12 +18,9 @@
 ◊(define (render-item item)
    (let ((src (get-source (path->string (path->complete-path (symbol->string item))))))
      (format
-       "<item>
-          <title>~a</title>
-    <link>~a</link>
-       </item>"
+       "<item><title>~a</title><link>~a</link></item>"
        (select 'h1 src)
-       (format "https://www.ckuhl.com/weblog/~a" item))))
+       (format "https://www.ckuhl.com/~a" item))))
 
 ◊(define (render-items items)
    (string-join (map render-item items) "\n"))
