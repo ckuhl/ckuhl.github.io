@@ -44,3 +44,6 @@ structure is:
 - https://solar.leo32345.com/
     - For a cool website
     - Similarly: https://solar.lowtechmagazine.com/
+
+### More Racket blogs
+- https://codeberg.org/dangermuse/dangermuse-blog/

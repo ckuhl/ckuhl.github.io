@@ -4,6 +4,7 @@ drafts/
 # Built website
 docs/
 *.html
+**/feed.xml
 
 # Compiled files
 compiled/
