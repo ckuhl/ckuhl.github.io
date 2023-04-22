@@ -121,8 +121,7 @@ Which was in turn borrowed as listed below: Copypasta!
   This version simply tests for the existence of a publish date in the metas.
 |#
 (define (syndicate? sym)
-   (if (not (select-from-metas sym-pubdate
-                               (dynamic-require (get-markup-source (symbol->string sym)) 'metas)))
+   (if (not (select-from-metas sym-pubdate (dynamic-require (get-markup-source (symbol->string sym)) 'metas)))
        #f
        #t))
 
@@ -140,10 +139,10 @@ Which was in turn borrowed as listed below: Copypasta!
     - Pub date has no default, it’s required!
 |#
 
-; (children 'weblog/index.html "index.ptree") replaced (dynamic-require opt-feed-ptree 'doc)
+; (children 'weblog/index.html "index.ptree") replaced (cdr (dynamic-require opt-feed-ptree 'doc))
 ; Why? I only want to load a subset of the pages in my root pagetree
 (define feed-item-structs
-  (let* ([rss-items (filter syndicate? (flatten (cdr (children 'weblog/index.html "index.ptree"))))]
+  (let* ([rss-items (filter syndicate? (flatten (children 'weblog/index.html "index.ptree")))]
          [rss-unsorted-item-structs (map
                                      (λ(ri)
                                        (define item-link (symbol->string ri))

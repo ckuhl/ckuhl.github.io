@@ -7,8 +7,11 @@ docs/: src/  ## Build site, default target
 clean:  ## Remove rendered HTML files
 	rm -rf ./build
 	rm -rf ./docs
-	rm ./src/**/*.html
+	rm -rf ./src/**/*.html
+	rm -rf ./src/**/*.xml
+	rm -rf ./src/compiled
 	rm -rf ./src/**/compiled
+	rm -rf **/*.*~
 
 dev:  ## Local development site
 	cd src/ && raco pollen start
