@@ -17,8 +17,9 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 ◊when/splice[(next here)]{
 	<span>◊|(->html (node->link (next here)))| &rarr;</span>
 }
--->
+
 </div>
+-->
 <hr/>
 </header>
 
@@ -41,7 +42,7 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 	<small>
 		In lieu of using Google Analytics, I have adopted an honour system;
 	</small>
-	</br>
+	<br/>
 	<small>
 		Please send an email with irrelevant personal information to <code>analytics@</code>.
 	</small>
