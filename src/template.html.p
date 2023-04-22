@@ -33,6 +33,9 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 	<a href="https://jigsaw.w3.org/css-validator/check/referer">
 		<img src="/images/w3-valid-css.gif" alt="Valid CSS!" width="88" height="31">
 	</a>
+	<a href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fwww.ckuhl.com%2Ffeed.xml">
+		<img src="/images/valid-atom.png" alt="[Valid Atom 1.0]" title="Validate my Atom 1.0 feed" width="88" height="31">
+	</a>
 </div>
 <div>
 	<small>

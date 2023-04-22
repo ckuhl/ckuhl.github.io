@@ -30,9 +30,9 @@ Which was in turn borrowed as listed below: Copypasta!
   Customizeable values
 |#
 
-;(define opt-feed-ptree   "index.ptree")
-(define opt-author-name  "Chris Kuhl")         ; The name given for the feed's <author>
-(define opt-author-email "www@ckuhl.com")    ; Email for the feed's <author>
+;(define opt-feed-ptree  "index.ptree")            ; unused...
+(define opt-author-name  "Chris Kuhl")             ; The name given for the feed's <author>
+(define opt-author-email "www@ckuhl.com")          ; Email for the feed's <author>
 (define opt-feed-title   "Chris Kuhl's Web Log")
 (define opt-feed-site    "https://www.ckuhl.com/") ; This should end with /
 
@@ -105,9 +105,9 @@ Which was in turn borrowed as listed below: Copypasta!
                                                                                      "Click here to read "
                                                                                      (i ,(rss-item-title ri)))))))))))
 
-  `(feed [[xml:lang "en-us"] [xmlns "http://www.w3.org/2005/Atom"]]
+  `(feed [[xml:lang "en-CA"] [xmlns "http://www.w3.org/2005/Atom"]]
          (title ,title)
-         (link [[rel "self"] [href ,link]])
+         (link [[rel "self"] [href ,(string-join (list link "feed.xml"))]])
          (generator [[uri "http://pollenpub.com/"]] "Pollen (custom feed)")
          (id ,link)
          (updated ,(date->rfc3339 (current-date)))
