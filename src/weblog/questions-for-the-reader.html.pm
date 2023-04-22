@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Questions for the reader")
 ◊(define-meta date "2023-04-19")
+◊(define-meta summary "Reflection on changes to my writing style to be more interactive.")
 
 
 ◊(h1 (select-from-metas 'title (current-metas)))

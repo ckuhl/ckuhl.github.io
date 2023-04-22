@@ -1,6 +1,12 @@
 #lang racket
 
-(require pollen/tag pollen/template pollen/core txexpr sugar/coerce)
+(require
+  racket/date
+  pollen/tag
+  pollen/template
+  pollen/core
+  txexpr
+  sugar/coerce)
 (provide (all-defined-out))
 
 ; Alias the 'root element to actually be 'pollen
@@ -17,3 +23,22 @@
   (define node-string (->string node))
   (define link-name (or (select-from-metas 'title node) node-string))
   (link (string-append "/" node-string) link-name))
+
+; Modified from https://github.com/malcolmstill/mstill.io/blob/master/blog/pollen.rkt
+; Converts a string "2015-12-19" or "2015-12-19 16:02" to a Racket date value
+(define (datestring->date datetime)
+  (match (string-split datetime)
+    [(list date time) (match (map string->number (append (string-split date "-") (string-split time ":")))
+                        [(list year month day hour minutes) (seconds->date (find-seconds 0
+                                                                                         minutes
+                                                                                         hour
+                                                                                         day
+                                                                                         month
+                                                                                         year))])]
+    [(list date) (match (map string->number (string-split date "-"))
+                   [(list year month day) (seconds->date (find-seconds 0
+                                                                       0
+                                                                       0
+                                                                       day
+                                                                       month
+                                                                       year))])]))

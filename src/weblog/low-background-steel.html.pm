@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Low-Background Steel; Low-Silicon Text")
 ◊(define-meta date "2023-04-14")
+◊(define-meta summary "Comparison of historical global changes to the latest AI revolution.")
 
 
 ◊(h1 (select-from-metas 'title (current-metas)))

@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Why a web log?")
 ◊(define-meta date "2023-04-08")
-
+◊(define-meta summary "A discussion on the motivation behind building a personal web site in 2023.")
 
 ◊(h1 (select-from-metas 'title (current-metas)))
 ◊(div (em (select-from-metas 'date (current-metas))))
