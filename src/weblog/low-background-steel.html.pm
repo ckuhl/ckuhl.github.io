@@ -78,10 +78,12 @@ I don't know!
 
 ◊p{
 A few things are certain though:
-	◊ol{
-		◊li{LLMs are not going away.}
-		◊li{They're going to continue to chew up text online.}
-		◊li{This means they will start consuming LLM-generated text.}
-		◊li{It also means humans will start consuming LLM-generated text. Ouroboros.}
-	}
 }
+
+◊ol{
+	◊li{LLMs are not going away.}
+	◊li{They're going to continue to chew up text online.}
+	◊li{This means they will start consuming LLM-generated text.}
+	◊li{It also means humans will start consuming LLM-generated text. Ouroboros.}
+}
+

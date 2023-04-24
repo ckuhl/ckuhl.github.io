@@ -70,12 +70,14 @@ As it turns out, keeping a web log is a lot of work.
 In a yet-to-be-written reflection on previous iterations of this very log, I will be sure to enumerate why this is so much work.
 
 For now you may rest easy knowing there are two main reasons that I write web log posts:
+}
 
 ◊ol{
 	◊li{Occasionally to capture some knowledge I could not find elsewhere}
 	◊li{More often, to consolidate a thought that I haven not yet coalesced into a concrete idea}
 }
 
+◊p{
 That is to say, to take some inchoate idea I want to people about, and iterate on it until I have a concrete idea I can share with others.
 
 I am not sure that I always can do that.
