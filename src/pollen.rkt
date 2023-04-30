@@ -24,6 +24,19 @@
   (define link-name (or (select-from-metas 'title node) node-string))
   (link (string-append "/" node-string) link-name))
 
+; FIXME: Derivative of the above `node->link` but with dates
+;  This ain't awful, but it is certainly one of those could-be-better
+(define (node->dated-link node)
+  (define node-string (->string node))
+  (define link-name
+    (string-join
+     (list
+     (select-from-metas 'date node)
+     (select-from-metas 'title node))
+    ": "))
+  (link (string-append "/" node-string) link-name)
+)
+
 ; Modified from https://github.com/malcolmstill/mstill.io/blob/master/blog/pollen.rkt
 ; Converts a string "2015-12-19" or "2015-12-19 16:02" to a Racket date value
 (define (datestring->date datetime)

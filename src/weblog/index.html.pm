@@ -17,5 +17,5 @@
 ◊(apply
  ul
  (map
-  (compose li node->link)
+  (compose li node->dated-link)
   (reverse (children 'weblog/index.html))))
