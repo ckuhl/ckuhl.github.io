@@ -1,0 +1,183 @@
+#lang pollen
+
+◊(define-meta title "The Asking-for-help Algorithm")
+◊(define-meta date "2023-04-29")
+◊(define-meta summary "Discussing an approach I use with interns to bolster their confidence when asking for help")
+
+# The Asking-for-help Algorithm
+_◊(select-from-metas 'date (current-metas))_
+
+
+## Backstory
+This stems from my experiences both as an intern in-office and working with a remote mentor, and then later at the same company as a full-time remote employee, mentoring a remote intern.
+
+You are an intern.
+You join a team, and everyone is so smart and with it and seems to never need to ask for help.
+Then there is you, who feels like you do not know how to do a single thing without help.
+Everyone is so busy the last thing you want to do is give them more work by asking for help.
+Yet you can not make a single step of progress on your own.
+How do you know when to ask for help?
+And better yet, how do you ask for help without feeling like a burden?
+
+
+## The Algorithm
+Though I call this an algorithm, it is merely a rough template that I use as a guide to formulating a request for help.
+This is focused towards younger or less-confident developers with goal of counteracting the fear of asking a “dumb question,” although really it is a good bar to set for everyone in a remote-first world where communication may be asynchronous.
+The trick is that, in the process of filling out the necessary details, it walks one through trouble-shooting all the simple cases.
+By the time one is done writing, they can be confident that they do indeed need help.
+
+Ideally by the end you will either have:
+
+1. A solution to your problem, or
+2. Proof that you can not solve this problem on your own.
+
+
+## Defining the algorithm
+
+### In brief
+The algorithm is as follows:
+
+1. Here is my problem
+2. Here is what I tried
+3. Here is why it did not work
+4. Here is why you are the best person to ask
+
+
+### Step 1: Here is my problem
+Begin by outlining the presenting and underlying problem.
+There may be more than one underlying problem.
+
+The presenting problem is the immediate thing blocking you from taking the next step you want to take. These often appear in conversations as a “what” or “how” question.
+For example, “How do you run the code in this repository?” may be underlaid by “I want to run this code, but the set-up script is giving me errors.”
+
+The underlying problem (or problems) are the goals that are driving you to encounter the presenting problem.
+These are usually more abstract, focusing on the bigger picture “why” that is driving your work, but may be no more profound than than “boss told me to.”
+These are the questions that may not feel relevant in the moment, but provide a bigger-picture view that allows for problem solving by moving laterally when faced by an intractable problem.
+
+
+### Part 2: Here is what I tried
+This can be a single action, or more often, a series of actions that have all ended with failure. These are the presenting problems before you found alternative ways to attempt.
+
+
+### Part 3: Here is why it did not work
+Giving context to why something did not work is as important as calling out why it did not work.
+Did it fail due to an error?
+Did it not produce the output you were expecting?
+Perhaps someone has seen the error before, and knows a quick trick to work around it.
+
+
+### [Repeat: Steps 2 and 3 as needed]
+There is more than one way to solve a problem.
+Showing which have gone down avoids the back-and-forth to answer questions you already know.
+It also shows that you are invested in this work.
+Writing down everything you have tried (and the outcomes) is a lot of work for you, but it reduces the work of the person you are asking for help.
+You could compare this to asking someone to help you move, and having everything already packed in boxes, or having nothing packed.
+
+
+### Part 4: Here is why you are the best person to ask for help
+A business is in fact a collection of humans, and humans have the tendency to be wrong sometimes.
+Telling someone why you are asking them allows them to they can correct a mistaken assumption.
+
+A secondary purpose is reminding the person you are asking of your relationship.
+If you are an intern, and are reaching out to your mentor, it can be useful to gently remind them that _helping you out is their job_.
+
+It can simply be the case that someone is an expert in this niche.
+Recognizing that they have put time and effort into mastering a subject is gratifying.
+
+
+## So what does the algorithm accomplish?
+It does not solve every problem, nor does it attempt to.
+Reiterating the above, it provides a framework that allows people to shortcut many common problems in asking for help.
+
+In a sense, it can be comparable to the detailed GitHub Issue templates that many open source projects use.
+Instead of playing a game of Twenty Questions, gather information and evidence up front, and present it all at once.
+Or perhaps it could be compared to a business case: All the facts you need are within this package, all you need to do is make the decision.
+
+Working through it step-by-step, there are other benefits that this brings:
+
+
+### Why outlining the problem is helpful
+Sometimes it can be hard to know what the problem you are trying to solve is.
+A ticket might be written by a busy senior engineer that sketched out what they thought was the best solution to the underlying problem, omitting critical context they had in their head.
+
+Writing down a problem forces you to formalize it, and also formalize where the gaps in the understanding is.
+Regardless of remote or in-person, synchronous or not, one has to do this anyways.
+In order to ask for help, you need to specify what you need help with.
+Why not do it well?
+
+
+### Why outlining what you tried is helpful
+Having something to show, shows you are invested.
+
+That is to say, this has equal value to the receiver than to the requester.
+Perhaps you have experienced a family member saying “I have done nothing and I am all out of ideas” when it comes to tech support.
+
+Showing that one has tried something shows that you are invested.
+It also shows that you are not going to waste their time trying obvious steps.
+
+For example, "I first tried to run the pre-compiled version of the code."
+
+
+### Why explaining why your actions did not work is helpful
+This is the second half of trying something the above.
+It may help you solve your problem.
+If it does not, it is a sound foundation for the person you are asking for help to build on.
+
+Building on the above example, the sentence may very well be extended with "...but it errored out with a segfault," or "...but it gave me a different set of results than the Amazon Web Console shows me."
+Both are valid reasons to try a different approach, but the errors tell very different stories about the underlying issue and whether compiling a tool locally may be the correct choice.
+
+
+
+### Why explaining why you are asking a specific person is helpful
+To me this is the most important part, possibly because it is the most rare to 
+listing why the specific person is being asked for help is useful for a few different reasons:
+
+
+#### Correcting misunderstandings
+_John said I should ask you because `git blame` says you were the last person to touch most of this code._
+
+It can be easy for many people to misunderstand someone's role in the company.
+Laying out that assumed role avoids frustrating the helper with confusion as to why they were asked, and gives them the opportunity to redirect to the correct person.
+Consider the case of reaching out to someone because "they were the last person to touch the code."
+
+_No, I just introduced the auto formatter to our code base, you’re going to want to look at the commit before mine in the history._
+
+Such justification would be useful if they simply introduced an automatic formatter to the code base, and so appeared to be the last person to make meaningful changes to the code, even though that is not true.
+
+
+#### Reaffirming the relationship
+As someone now expected to do things, it is easy to be frustrated by distractions to not do things.
+Reaffirming and reestablishing the relationship between to people can help defuse that errant frustration.
+At least at the companies I have worked at, interns are expected to be young students.
+The role of an intern _is to ask questions_, and the role of a mentor _is to be distracted and answer questions_.
+
+
+#### Calls attention to implicit dependencies
+Explaining the reasoning you have selected someone to answer your questions can also surface unrealized dependencies.
+It is easy for a helper to accidentally become "the X person" just by answering questions in their wheelhouse.
+Writing these assumptions down can be the jolt that is necessary to say "I need to write this down so other people can do this too."
+
+
+## So why write this?
+
+The first motivation to write this is that, like any good programmer, I can be lazy sometimes.
+As I mentioned, I have given this advice before, and will likely give it again.
+Writing allows me to shortcut giving a full explanation, and likely missing some different portion each time.
+
+Writing is also a process that allows you to crystallize thoughts and explanations.
+Putting pen to paper (and then... electrons to more electrons? Hmm) requires a rigour that speaking does not.
+In this way, writing is the programming to speaking's pseudocode.
+
+### So what?
+
+Recently at work we read [The Missing README](https://themissingreadme.com/).
+This is what cued me in to the idea that maybe other people are thinking these same thoughts.
+Technical problems have technical answers.
+You can measure, calculate, and optimize.
+Human problems have human answers.
+Different solutions work for different people for the same problem.
+Perhaps this solution works where others have not, for others?
+
+The most compelling motivation is thus: I am always curious to hear more about the 'human algorithms' other people have discovered.
+I am also curious to know what others have seen or experienced, derived or composed from their own lived experience.
+What easier way to find these others than to write about my experiences and invite discussion into my home?
