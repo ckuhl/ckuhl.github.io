@@ -58,3 +58,6 @@ structure is:
 - https://www.google.com/search?client=firefox-b-d&q=%22feed.xml.pp%22
 - http://web.archive.org/web/20201018101014/http://blevs.github.io/pollen-feed-tutorial/
     - https://github.com/Blevs/pollen-feed-tutorial/blob/master/search-doc.rkt
+
+## Notes to self
+- `Mac: Option + Shift + V` for ◊

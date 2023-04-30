@@ -121,7 +121,7 @@ Which was in turn borrowed as listed below: Copypasta!
   This version simply tests for the existence of a publish date in the metas.
 |#
 (define (syndicate? sym)
-   (if (not (select-from-metas sym-pubdate (dynamic-require (get-markup-source (symbol->string sym)) 'metas)))
+   (if (not (select-from-metas sym-pubdate (dynamic-require (get-source (symbol->string sym)) 'metas)))
        #f
        #t))
 
@@ -146,7 +146,7 @@ Which was in turn borrowed as listed below: Copypasta!
          [rss-unsorted-item-structs (map
                                      (λ(ri)
                                        (define item-link (symbol->string ri))
-                                       (define item-path (get-markup-source item-link))
+                                       (define item-path (get-source item-link))
                                        (define item-metas (dynamic-require item-path 'metas))
                                        (define item-author (or (select-from-metas sym-author item-metas) opt-author-name))
                                        (define item-summary (or (select-from-metas sym-summary item-metas) "(No summary given)"))
