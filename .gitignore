@@ -1,11 +1,13 @@
-# WIP files
+# There's nothing in this directory
 drafts/
 
 # Built website
 docs/
-*.html
+
+# Compiled content that is placed in `./src`
+src/**/*.html
 **/feed.xml
 
-# Compiled files
+# Compiled files (i.e. from Racket and Pollen)
 compiled/
 *.*~
