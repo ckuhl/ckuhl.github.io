@@ -1,0 +1,53 @@
+#lang pollen
+
+◊(define-meta title "The Horseshoe of Sucking")
+◊(define-meta date "2023-05-11")
+◊(define-meta summary "Reflection on personal growth and my attitude toward my own past work")
+
+# ◊(select-from-metas 'title (current-metas))
+_◊(select-from-metas 'date (current-metas))_
+
+> Sucking at something is the first step towards being kind of good at something.
+
+I have heard variations of this saying from different people in different places.
+The common theme between all such occasions was that they happened while I was busy sucking at something.
+Despite appearing harsh on the surface, it is a surprisingly soft approach.
+It manages to expound both that sucking at something is to be expected, and is a necessary part of personal growth.
+
+Although I am by no means an old hand, looking back at my previous iterations of my web log now means looking back to before I had really started writing in school or in the workplace.
+As I look back at 'old me' for the first time as 'new me,' I think it is interesting to look at the different attitudes I have had toward my own programming and writing between then and now.
+
+
+## At first, blind Enthusiasm
+When I first started, I had no idea what best practices were.
+I did not really know what practices were.
+I did not care.
+The freedom of having the tools to create was and is intoxicating, and I made full use of that power.
+
+Looking back at my oldest code, and at the various iterations of writing my web log, I can see this joyous indifference everywhere.
+Much like solving a puzzle, you are limited to the tools you have.
+Like a proof of Turing completeness, it is shocking how little you need to get started.
+
+
+## Then recognizing flaws
+The joy of creation carries you forward to create more, research more, learn more.
+The process of learning more leads you to learning what is right and wrong, or at least what is "right" and "wrong."
+Like learning an instrument: these are not hard-and-fast rules unless you are a beginner.
+You must know the rules before you can break them.
+
+So gaining experience is also learning why my own creations are awful.
+My biggest regret is deleting code after I learned better ways of doing things.
+
+
+## Finally accepting the flaws
+Acceptance is the final stage of learning.
+Learning not just your art, but learning learning.
+Recognizing that it is a love for what you do that keeps you continuing.
+Recognizing that it was a love for what you did that started you.
+
+I have started another iteration of my blog.
+Maybe, hopefully, the final iteration.
+I am continuing to learn how to write and how to publish.
+Not starting, not finished, but finished starting, and having built a strong foundation.
+Now?
+There is still the whole house to build.
