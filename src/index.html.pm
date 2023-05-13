@@ -6,7 +6,9 @@
    "Under construction"
    (img #:src "./images/construction1.gif" #:alt "Construction barricade"))
 
-◊(p "Welcome to the personal web log of one " (a #:href "/about.html" "Christian Kuhl") ".")
+◊(p "Welcome to the personal web log of one "
+    (a #:href "/about.html" "Christian Kuhl")
+    ".")
 
 ◊(hr)
 
@@ -16,7 +18,7 @@
     (a #:href "/weblog" "My web log")
     " "
     (img #:src "./images/Updated.gif" #:alt "Updated!"))
-   (li "Code on " (a #:href "https://github.com/ckuhl" "GitHub")))
+   (li "Code on " (a #:href "https://github.com/ckuhl/" "GitHub")))
 
 ◊(hr)
 
