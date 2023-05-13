@@ -14,9 +14,9 @@ The basic structure is thus:
 - Meta: The structure roughly reflects project structure
 - `./drafts` does not exist and you should not worry about it
 - `./docs` is where the compiled site is generated before publishing
-- `./src/*` is source of the Pollen site
-- `./src/pollen.rkt` defines meta-functions that affect the rest of the site
-- `./src/{archive,css,images}` stores static content
+- `./src/` is source of the Pollen site
+    - `./src/pollen.rkt` defines meta-functions that affect the rest of the site
+    - `./src/{archive,css,images}` stores static content
 - `Makefile` does the needful
 
 
@@ -29,6 +29,7 @@ The basic structure is thus:
     - Arrange in a certain booklike fashion
     - Document exactly how Pollen works
         - Or at least, well enough that I understand it
+    - References to sites I think are neat!
 - Style points:
     - Work on / fix the nav bar at the top
     - More totally radical 88x31px footer images
