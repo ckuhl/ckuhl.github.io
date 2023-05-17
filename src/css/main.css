@@ -26,15 +26,15 @@ ul {
 	list-style-image: url('/images/ball_red.gif');
 }
 
-ul li ul {
+ul ul {
 	list-style-image: url('/images/ball_orange.gif');
 }
 
-ul li ul li ul {
+ul ul ul {
 	list-style-image: url('/images/ball_yellow.gif');
 }
 
-ul li ul li ul li ul {
+ul ul ul ul {
 	list-style-image: url('/images/ball_green.gif');
 }
 
@@ -61,6 +61,10 @@ body > div {
 	min-height: 80vh;
 }
 
+body > div time {
+	font-style: italic;
+}
+
 body > header, body > footer {
 	text-align: center;
 }
@@ -85,5 +89,15 @@ FIXME: This is a hack-ish. Should use flexbox instead
 @media screen and (min-width: 380px) {
 	body > header, body > div, body > footer {
 		padding: 5px 5px 5px 85px;
+	}
+}
+
+@media print {
+	body > header, body > footer {
+		display: none;
+	}
+
+	ul, ul ul, ul ul ul, ul ul ul ul {
+		list-style-image: none;
 	}
 }

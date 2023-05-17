@@ -5,7 +5,7 @@
 ◊(define-meta summary "Reflection on personal growth and my attitude toward my own past work")
 
 # ◊(select-from-metas 'title (current-metas))
-_◊(select-from-metas 'date (current-metas))_
+<time>◊(select-from-metas 'date (current-metas))</time>
 
 > Sucking at something is the first step towards being kind of good at something.
 
