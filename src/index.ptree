@@ -18,5 +18,8 @@ about.html
 	notes-on-pollen/filetypes.html
 	notes-on-pollen/subdir.html
 }
-◊miscellania/index.html{
+◊et-cetera/index.html{
+	et-cetera/self-style-guide.html
+	et-cetera/web-links.html
+	et-cetera/web-site.html
 }

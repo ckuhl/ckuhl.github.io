@@ -18,7 +18,8 @@
     (a #:href "/weblog" "My web log")
     " "
     (img #:src "./images/Updated.gif" #:alt "Updated!"))
-   (li "Code on " (a #:href "https://github.com/ckuhl/" "GitHub")))
+   (li "Code on " (a #:href "https://github.com/ckuhl/" "GitHub"))
+   (li (a #:href "/et-cetera" "A collection of odds and ends")))
 
 ◊(hr)
 

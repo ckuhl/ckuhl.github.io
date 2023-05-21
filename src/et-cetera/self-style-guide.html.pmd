@@ -1,0 +1,27 @@
+#lang pollen
+
+◊(define-meta title "The Self Style Guide")
+
+# ◊(select-from-metas 'title (current-metas))
+A list of vague rules I try to abide by when writing content for my web log.
+Why?
+It is easier than thinking.
+
+Some of these decisions have concrete reasoning, and some of them are no more than stylistic choices.
+
+
+## Word rules
+* Blog → web log
+
+
+## Grammatical rules
+* Do not start a sentence with a conjunction.
+    * Often these may be useful, but in such a circumstance there is a better arrangement that is more impactful.
+* Avoid contractions
+    * This one is entirely stylistic.
+
+
+## Character rules
+* Avoid emoji where possible
+    * This web log should look the exact same printed on paper
+    * Other Unicode (for example arrows →, stars ★, or shapes ◊"◊") is permitted

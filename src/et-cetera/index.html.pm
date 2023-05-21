@@ -9,9 +9,13 @@
 ◊; TODO: Is this the best way to insert the current pagetree?
 ◊(let () (current-pagetree (load-pagetree "../index.ptree")) "")
 
-◊(define-meta title "Things I've created")
+◊(define-meta title "Et Cetera")
 
 
-◊(h1 "Things!")
+◊(h1 "Et Cetera")
 
-◊(apply ul (map (compose li node->link) (children 'miscellania/index.html)))
+◊(apply
+ ul
+ (map
+  (compose li node->link)
+  (reverse (children 'et-cetera/index.html))))
