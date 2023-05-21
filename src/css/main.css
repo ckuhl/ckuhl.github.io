@@ -44,7 +44,7 @@ This really represents the default content that Pollen spits out. I suppose this
 should really be a
 TODO: Fix the way styles are scoped to better reflect the document structure.
 */
-body > header, body > div, body > footer {
+body header, body content, body footer {
 	display: block;
 	background-color: #ffffff;
 	background-image: url('/images/journal_bk.gif');
@@ -56,16 +56,16 @@ body > header, body > div, body > footer {
 	text-align: left;
 }
 
-body > div {
+body content {
 	/* Entirely stylistic choice */
 	min-height: 80vh;
 }
 
-body > div time {
+body content time, body content time {
 	font-style: italic;
 }
 
-body > header, body > footer {
+body header, body footer {
 	text-align: center;
 }
 
@@ -74,7 +74,7 @@ FIXME: This is a hack-ish. Should use flexbox instead
 740 = 640px above + 25 right padding + 75 left padding
 */
 @media screen and (max-width: 740px) {
-	body > header, body > div, body > footer {
+	body header, body content, body footer {
 		display: block;
 		background-size: 200%;
 		background-repeat: repeat-y;
@@ -87,13 +87,13 @@ FIXME: This is a hack-ish. Should use flexbox instead
 
 /* Secondary hack for weird devices */
 @media screen and (min-width: 380px) {
-	body > header, body > div, body > footer {
+	body header, body content, body footer {
 		padding: 5px 5px 5px 85px;
 	}
 }
 
 @media print {
-	body > header, body > footer {
+	body header, body footer {
 		display: none;
 	}
 

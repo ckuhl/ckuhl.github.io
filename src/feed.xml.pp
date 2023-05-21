@@ -16,13 +16,16 @@ Which was in turn borrowed as listed below: Copypasta!
 |#
 
 (require pollen/core
-         pollen/pagetree
          pollen/file
+         pollen/pagetree
+         pollen/render
+         pollen/template/html
          racket/date
          racket/format
          racket/list
          racket/string
          xml
+         xml/path
          (only-in "pollen.rkt"
                   datestring->date))
 
@@ -53,6 +56,21 @@ Which was in turn borrowed as listed below: Copypasta!
 (define sym-updated 'doc-updated)
 (define sym-title   'title)
 (define sym-summary 'summary)
+
+
+
+#|
+ XXX: CHAOS
+ This is where I insert my own functions because I am an agent of chaos.
+ Do not copy this and assume it will work; I do not even know that.
+|#
+(define (get-page-content p)
+  (printf "~v~n" p)
+ (se-path* '(body content) p))
+#|
+ XXX: CHAOS ends
+|#
+
 
 #|
   This is where you’d normally be told not to change anything below this point.
@@ -100,9 +118,9 @@ Which was in turn borrowed as listed below: Copypasta!
                             (link [[rel "alternate"] [href ,item-url]])
                             (id ,item-url)
                             (summary [[type "html"]]
-                                     ,(as-cdata (string-append "<p>" (rss-item-summary ri) "</p>"
+                                     ,(as-cdata (string-append (rss-item-summary ri)
                                                                (xexpr->string `(p (a ((href ,item-url))
-                                                                                     "Click here to read "
+                                                                                     "Click here to see the original article "
                                                                                      (i ,(rss-item-title ri)))))))))))
 
   `(feed [[xml:lang "en-CA"] [xmlns "http://www.w3.org/2005/Atom"]]
@@ -143,19 +161,21 @@ Which was in turn borrowed as listed below: Copypasta!
 ; Why? I only want to load a subset of the pages in my root pagetree
 (define feed-item-structs
   (let* ([rss-items (filter syndicate? (flatten (children 'weblog/index.html "index.ptree")))]
-         [rss-unsorted-item-structs (map
-                                     (λ(ri)
-                                       (define item-link (symbol->string ri))
-                                       (define item-path (get-source item-link))
-                                       (define item-metas (dynamic-require item-path 'metas))
-                                       (define item-author (or (select-from-metas sym-author item-metas) opt-author-name))
-                                       (define item-summary (or (select-from-metas sym-summary item-metas) "(No summary given)"))
-                                       (define item-pubdate (select-from-metas sym-pubdate item-metas))
-                                       (define item-updated (or (select-from-metas sym-updated item-metas) item-pubdate))
-                                       (define item-title (or (select-from-metas sym-title item-metas)
-                                                              (date->string (datestring->date item-pubdate))))
-                                       (rss-item item-title item-author item-link item-summary item-pubdate item-updated))
-                                     rss-items)])
+         [rss-unsorted-item-structs
+          (map
+           (λ (ri)
+             (define item-link (symbol->string ri))
+             (define item-path (get-source item-link))
+             (define item-metas (dynamic-require item-path 'metas))
+             (define item-author (or (select-from-metas sym-author item-metas) opt-author-name))
+             (define item-summary (->html (dynamic-require item-path 'doc)))
+             (define item-pubdate (select-from-metas sym-pubdate item-metas))
+             (define item-updated (or (select-from-metas sym-updated item-metas) item-pubdate))
+             (define item-title
+              (or (select-from-metas sym-title item-metas)
+                  (date->string (datestring->date item-pubdate))))
+             (rss-item item-title item-author item-link item-summary item-pubdate item-updated))
+           rss-items)])
     ;; sort from latest to earliest. Doesn't rely on order in ptree file, but rather pub date in source.
     (sort rss-unsorted-item-structs > #:key (λ(i) (date->seconds (datestring->date (rss-item-pubdate i)))))))
 

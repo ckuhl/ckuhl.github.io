@@ -23,7 +23,9 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 <hr/>
 </header>
 
-◊(->html doc)
+<content>
+	◊(->html doc)
+</content>
 
 <footer>
 <hr/>
