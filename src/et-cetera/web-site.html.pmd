@@ -1,0 +1,35 @@
+#lang pollen
+
+◊(define-meta title "Project: A fun, slightly odd, web site")
+
+# ◊(select-from-metas 'title (current-metas))
+
+Motivation: Need a website.
+
+## Why?
+* A place to scrawl -- writing is the best way to solidify one's thoughts
+* Learn from mistakes in previous iterations of websites
+* Have fun making something silly
+
+
+## Goals
+* Make it notable
+* Make it easy to update
+* Fun
+
+
+## Anti-goals
+* Optimization
+* Usefulness
+
+
+## Inspirations, references, and other stuff
+### Style Inspirations
+* [solaria's webspace](https://solaria.neocities.org/)
+* [The Cyber Vanguard](https://cyber.dabamos.de/index.html)
+
+
+### Pollen site references
+* [GitHub: otherjoel/try-pollen](https://github.com/otherjoel/try-pollen/)
+* [GitHub: malcolmstill/mstill.io](https://github.com/malcolmstill/mstill.io/)
+* [GitHub: rymaju/pollen-ryanjung.dev](https://github.com/rymaju/pollen-ryanjung.dev/)

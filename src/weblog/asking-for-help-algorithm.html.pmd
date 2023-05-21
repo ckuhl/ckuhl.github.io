@@ -3,8 +3,8 @@
 ◊(define-meta title "The Asking-for-help Algorithm")
 ◊(define-meta date "2023-04-29")
 
-# The Asking-for-help Algorithm
-_◊(select-from-metas 'date (current-metas))_
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
 
 ## Backstory
 This stems from my experiences both as an intern in-office and working with a remote mentor, and then later at the same company as a full-time remote employee, mentoring a remote intern.
