@@ -2,8 +2,6 @@
 
 ◊(define-meta title "Low-Background Steel; Low-Silicon Text")
 ◊(define-meta date "2023-04-14")
-◊(define-meta summary "Comparison of historical global changes to the latest AI revolution.")
-
 
 # ◊(select-from-metas 'title (current-metas))
 <time>◊(select-from-metas 'date (current-metas))</time>
@@ -12,7 +10,6 @@ This was a metaphor I saw recently somewhere on the internet.
 Likely on Hacker News, my guilty pleasure.
 
 ## Low-background Steel
-
 [Low-background steel](https://en.wikipedia.org/wiki/Low-background_steel) is steel that was produced before the advent of the nuclear bomb, and contains far less radioactive inclusions than contemporary steel.
 This is not to say that modern steel contains a large amount of radiation.
 Rather, if you are producing a very precise machine (say, a medical imaging device),

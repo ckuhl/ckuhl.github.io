@@ -2,7 +2,6 @@
 
 ◊(define-meta title "The Horseshoe of Sucking")
 ◊(define-meta date "2023-05-11")
-◊(define-meta summary "Reflection on personal growth and my attitude toward my own past work")
 
 # ◊(select-from-metas 'title (current-metas))
 <time>◊(select-from-metas 'date (current-metas))</time>
@@ -15,7 +14,7 @@ Despite appearing harsh on the surface, it is a surprisingly soft approach.
 It manages to expound both that sucking at something is to be expected, and is a necessary part of personal growth.
 
 Although I am by no means an old hand, looking back at my previous iterations of my web log now means looking back to before I had really started writing in school or in the workplace.
-As I look back at 'old me' for the first time as 'new me,' I think it is interesting to look at the different attitudes I have had toward my own programming and writing between then and now.
+As I look back at "old me" for the first time as "new me," I think it is interesting to look at the different attitudes I have had toward my own programming and writing between then and now.
 
 
 ## At first, blind Enthusiasm

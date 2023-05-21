@@ -26,8 +26,7 @@ Which was in turn borrowed as listed below: Copypasta!
          racket/string
          xml
          xml/path
-         (only-in "pollen.rkt"
-                  datestring->date))
+         (only-in "pollen.rkt" datestring->date))
 
 #|
   Customizeable values
@@ -65,8 +64,10 @@ Which was in turn borrowed as listed below: Copypasta!
  Do not copy this and assume it will work; I do not even know that.
 |#
 (define (get-page-content p)
-  (printf "~v~n" p)
- (se-path* '(body content) p))
+ ; This is _quite_ fragile.
+ ;  It assumes that there is: `h1, div, time` in that order
+ ;  If there is not, it will break in _weird_ ways. Cool!
+ (rest (rest (rest p))))
 #|
  XXX: CHAOS ends
 |#
@@ -168,7 +169,7 @@ Which was in turn borrowed as listed below: Copypasta!
              (define item-path (get-source item-link))
              (define item-metas (dynamic-require item-path 'metas))
              (define item-author (or (select-from-metas sym-author item-metas) opt-author-name))
-             (define item-summary (->html (dynamic-require item-path 'doc)))
+             (define item-summary (->html (get-page-content (dynamic-require item-path 'doc))))
              (define item-pubdate (select-from-metas sym-pubdate item-metas))
              (define item-updated (or (select-from-metas sym-updated item-metas) item-pubdate))
              (define item-title

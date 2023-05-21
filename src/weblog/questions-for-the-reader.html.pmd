@@ -2,12 +2,9 @@
 
 ◊(define-meta title "Questions for the reader")
 ◊(define-meta date "2023-04-19")
-◊(define-meta summary "Reflection on changes to my writing style to be more interactive.")
-
 
 # ◊(select-from-metas 'title (current-metas))
 <time>◊(select-from-metas 'date (current-metas))</time>
-
 
 ## High School
 When I was in high school, my assignments often had me reading books.
