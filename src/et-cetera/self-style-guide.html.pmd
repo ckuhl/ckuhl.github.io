@@ -11,7 +11,9 @@ Some of these decisions have concrete reasoning, and some of them are no more th
 
 
 ## Word rules
-* Blog → web log
+* In general, prefer the longer form of a word if not too obscure:
+    * Blog → web log
+    * But not recap ↛ recapitulate
 
 
 ## Grammatical rules
@@ -25,3 +27,14 @@ Some of these decisions have concrete reasoning, and some of them are no more th
 * Avoid emoji where possible
     * This web log should look the exact same printed on paper
     * Other Unicode (for example arrows →, stars ★, or shapes ◊"◊") is permitted
+
+## Language Rules
+* Canadian English is strongly preferred
+    * Like any Canadian, it is okay to be confused about what it means to be you
+* Strongly prefer Canadian metaphors and references
+    * Prefer "Ninth Grade" over "Freshman"
+    * Prefer "e-Transfer" over "Venmo"
+    * Prefer "Premier" over "Governor"
+    * Et cetera
+* When writing a foreign language (e.g. Québécois French), prefer their rules over English's
+    * Use the preferred style for a language, « par example, les guillemets »
