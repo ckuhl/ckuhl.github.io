@@ -1,0 +1,22 @@
+#lang pollen
+
+◊(define-meta title "Pollen Notes: Deeply nested pages")
+
+
+# ◊(select-from-metas 'title (current-metas))
+
+
+# I want to include sub-sub-pages on my pollen site
+
+This comes from a specific problem I have encountered:
+
+I have a site, designed in Pollen.
+I want to have sub-pages (for example, a blog in a `/blog/` directory).
+I also want to have sub-sub-pages (for example, notes on a class in a `/university/class/` directory).
+I know I can use an `index.ptree` to do the first.
+
+How do I do the latter?
+
+
+## Hmm, well, uh
+TBD.

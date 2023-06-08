@@ -14,12 +14,13 @@ about.html
 	◊; 2023-05-11
 	weblog/horseshoe-of-sucking.html
 }
-◊notes-on-pollen/index.html{
-	notes-on-pollen/filetypes.html
-	notes-on-pollen/subdir.html
-}
 ◊et-cetera/index.html{
 	et-cetera/self-style-guide.html
-	et-cetera/web-links.html
+	◊; FIXME: Get the below working to an acceptable level
+	◊; et-cetera/web-links.html
 	et-cetera/web-site.html
+	◊et-cetera/pollen-notes/index.html{
+		et-cetera/pollen-notes/file-types.html
+		et-cetera/pollen-notes/sub-directories.html
+		et-cetera/pollen-notes/sub-sub-pages-on-a-pollen-site.html}
 }

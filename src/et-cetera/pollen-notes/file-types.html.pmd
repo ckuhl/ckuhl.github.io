@@ -1,0 +1,50 @@
+#lang pollen
+
+◊(define-meta title "Pollen Notes: File types")
+
+
+# ◊(select-from-metas 'title (current-metas))
+
+Pollen provides a few different file extensions.
+I found the layout of the tutorials a bit confusing -- tell me what everything is and then dive into the details, please!
+This is the very short overview I wish I had when I started.
+
+
+## `.`
+The null filetype -- this is useful for dodging `.gitignore` rules such as `*.html`.
+
+
+## `.ptree`
+A meta filetyle -- it is not rendered directly, but directs pollen as to what files should be rendered.
+You may use more than one of these.
+Typically there is an `index.ptree` at the root of a project.
+You may also include subtrees by reference.
+
+This is most useful importing content from a sub-page, for example:
+
+```
+◊"◊"(require (prefix-in sub: "sub.ptree"))
+item-a
+item-b
+◊"◊"sub:doc
+item-y
+item-z
+```
+
+I would use this with a single sub-directory with many pages.
+That is to say, in a blog (more at [Nesting pagetrees](https://docs.racket-lang.org/pollen/Pagetree.html), specifically section `14.5.3`).
+
+
+## `.pp`
+This extension stands for Pollen Preprocessor (or maybe just PreProcessor) -- it is processed by Pollen and then fed into `template.html.*`.
+
+
+## `.pm`
+This is the first of two "authoring suffices," which means these are intended for writing content as opposed to, uh, coding.
+This one is text, and Pollen.
+
+
+## `.pmd`
+This is the second of the two authoring suffices.
+It is a marriage of Pollen, text, and MarkDown.
+It is noteworthy that this converts plaint quotes (i.e. `"`) to smart quotes (i.e. `“` and `”`).
