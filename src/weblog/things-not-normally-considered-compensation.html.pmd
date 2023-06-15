@@ -1,0 +1,157 @@
+#lang pollen
+
+◊(define-meta title "Things Not Normally Considered Compensation")
+◊(define-meta date "2023-06-14")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+
+# Places Not Normally Considered The Best
+
+In university I had a friend who was majoring in statistics.
+Towards the end of our undergraduate, they wanted to find the optimal place to live after graduation.
+Pretty standard problem: define a set of variables, rank places against those criteria, and you have an output.
+Thus it was confidently determined that the far suburbs of Las Vegas, Nevada are the best place to live in the entire world.
+At least, that is what the model said.
+
+Perhaps there is something that can not be measured that contributes to the desirability of a place.
+This is a line of thinking that leads to your friends reading books like The Death and Life of Great American Cities and The High Cost of Free Parking and other urban planning treatises.
+
+
+# Making decisions like a CS student
+
+If you were to make a simplified model of how people compare compensation, you might end up with something like this:
+
+1. You place compensation on a balance,
+2. you place the the work being asked of you on the other side,
+3. and you use this to determine whether or not you take an offer.
+
+This is an incomplete model.
+Humans may take a lower-paying job over a higher-paying job.
+Perhaps someone you know has done that.
+Perhaps you have done that.
+Despite us all being squishy, irrational humans, we usually have a good reason for choosing a job that does not mesh with the strict criteria we set above.
+Thus there is a hole in our model.
+
+
+# The Things You Can Not Calculate
+
+This hole in our model of compensation decisions mirrors the hole in an engineer's model of what makes a city an enjoyable place to live.
+
+This nonzero sum is not cash compensation, and it is not non-cash compensation.
+This is non-non-cash compensation.
+
+When I got an offer from my final internship to join the company full time, I made a chart of pros and cons.
+Multiple people made the list as a "pro," despite the fact that I could not take them to the bank and exchange them for cash.
+Yet they were still valuable: they were mentors, that would help me grow and compound my own returns in the future.
+They were friends, that would make my days more enjoyable.
+They were leaders, that would be the ablative heat shield between my work and managerial demands.
+
+These human connections were a form of non-non-cash compensation.
+
+
+# Non-non-cash compensation
+
+Below are some examples of non-non-cash compensation that I jotted down over the course of a few days:
+
+* Commute (time)
+* Commute (experience)
+* Office environment
+* Re/location requirement
+* Working hours (length, flexibility)
+* Working outside working hours (on-call)
+* Training provided
+* Self-directed training (i.e. 20% time)
+* Reputation of company (Working at Tesla, SpaceX, etc.)
+* People you work with (learning)
+* People you work with (social)
+* Your manager
+* Mission / purpose of company
+* Future of company
+
+
+# `GROUP BY`
+
+Looking more closely at these, you can start to divide these examples of supracompensation into categories.
+
+
+## Time spent related to work
+
+That is not just hours worked, but time spent commuting, moving your house and home, or waiting to engage.
+Beyond direct time spent working, it is also the freedom to take time off, to end a day early or start a day late.
+
+## Re/investment in the self
+
+Which is to say, to increase the value of yourself as an employee.
+This can be intentful actions by an employer.
+For example, training and professional development supported by the company.
+
+This can be an aura around the company itself.
+Tenure at certain technology companies can be seen as a positive at other companies, even if there is no common heritage between the two.
+
+Yet this can also be an aura around the self that is adjacent to the company.
+To be seen not just as someone that can write code, but also write content (for an engineering blog), can be a coup all its own.
+
+
+## Experience of work
+
+As it turns out, having a job means you have to work.
+If you have to spend ~25% of your week doing something, enjoying it can make a significant difference in the value you place on it.
+The tools, processes, and practises required to accomplish your work can improve or detract from the work itself.
+Most importantly, the people you spend time around are a critical part of how you experience and value the work you do.
+As it turns out, you can not get away from people.
+So you might as well enjoy their company.
+
+
+
+# Conclusion (for humans)
+
+This is something I have been talking to friends from school about recently.
+My cohort graduated some three years ago, starting work during the pandemic.
+They have been able to experience work in many ways in their brief careers but have not yet been conditioned to expect any one.
+Whether on-person full-time, or working for their dream company from their hometown, or being a digital nomad (just do not tell HR).
+
+Many companies are beginning to return to office, leaving people at an intersection.
+What really is the value of working from home, wherever home may be?
+What is the value of a CEO's decision that Best Friends Hangout Time™ in the office needs to come back?
+What is the value of walking to work along a river pathway instead of under an elevated highway?
+What is the value of seeing family on days that are not holidays?
+What is the value of mentorship?
+
+
+# Conclusion (for corporations)
+
+Many companies experience employee-led initiatives.
+Perhaps the developers are trying to build a better culture of ownership and pride in work.
+Most people do not have the freedom to grant cash prizes beyond token gift card amounts.
+
+How does one motivate people when one can not use The Big Lever?
+Why, with the smaller levers, of course.
+If you want people to write blog posts, then perhaps the answer is not "do it because it is edifying" but instead "do it for the increase in the value of the brand called You."
+
+
+# Further research warranted
+
+## Talking to coworkers
+
+There are likely things out there that I do not personally value and so am missing.
+
+
+## My past
+
+I think I learned some things in university.
+Reviewing them may be useful.
+Recalling the generalist nature of my BBA experience, there is probably some subfield of business that ties into this very well.
+Likely I have surgically scrubbed that from my memory with softball in the high noon sun.
+
+
+## My future
+
+Are there other things I value that I have not yet come to appreciate?
+
+
+## Talking strangers
+
+There are probably also people out there that can argue that one can assign a dollar value to certain things.
+It remains uncertain if this is a useful avenue to go down, but it is certainly a useful way to fill time.
