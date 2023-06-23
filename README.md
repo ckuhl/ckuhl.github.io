@@ -54,6 +54,11 @@ The basic structure is thus:
 
 
 ### Wip notes: RSS and ATOM
+- TODO: Style the RSS feed:
+    - https://darekkay.com/blog/rss-styling/
+    - http://feeds.bbci.co.uk/news/england/london/rss.xml
+
+#### TODO: Codify this into an article(?)
 - https://github.com/otherjoel/try-pollen/blob/master/feed.xml.pp
 - https://codeberg.org/dangermuse/dangermuse-blog/src/branch/main/feed.xml.pp
 - https://www.google.com/search?client=firefox-b-d&q=%22feed.xml.pp%22
