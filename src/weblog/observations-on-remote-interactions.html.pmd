@@ -1,0 +1,67 @@
+#lang pollen
+
+◊(define-meta title "Informal Connections when Remote-First")
+◊(define-meta subtitle "Observations on different ways culture happens")
+◊(define-meta date "2023-08-31")
+◊(define-meta summary "Observations about how humans interact at scale")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+In both life and work, like everyone else, I transitioned to a remote-first culture over the course of the COVID-19 pandemic.
+Through this people adapted to, and overcame, the adversity that comes with working at such a remove.
+The old patterns of bumping into someone at lunch or in line at the in-office café are no longer true.
+Yet through this time I have continued to grow, new coworkers have joined, and friends groups have admitted friends to become integral members without ever having been around the old haunts that the old guard all knew.
+So how did we do it?
+What are the new patterns that replaced the old?
+
+This is not to be either exhaustive or authoritative; rather this is the observations of one dude.
+The thing about humans is that they are squishy and illogical, and what works for one group may not work for others.
+One size does not fit all, tumble dry only.
+
+So what are these patterns?
+The general theme among all of the patterns is that they are an opportunity for people that are alike to meet each other.
+If you are the kind of person to show up early to the group calls, you will meet others that show up early to those same calls.
+If you are the kind of person to not notice if a Zoom meeting has ended, you may meet other people that are also engaged in deep work, and hanging out in the same Zoom meeting that ended an hour ago.
+
+
+## An incomplete catalogue
+### Showing up early to large meetings
+Consider the group chat Meeting of the Minds.
+Perhaps you are are the early riser that kept everyone else alive in university.
+On the other hand, perhaps you are the person keeping the early riser in business.
+Likely you will want to show up early so you are not late, or are up against your will.
+What better time to chat than non-meeting time?
+
+
+### Scheduled customer support time is social time when nobody shows up for help
+
+If your team supports other teams, you may have internal office hours.
+When the stream of customers dry up, internal projects may become an opportunity to support each other.
+If there is nothing worthy of pulling in extra team mates, perhaps instead there is a debate about the merits of a Traeger smoker (I have been told there are many).
+Scheduled unprogrammed time A recurring social hour without any planned itinerary can be a great place to practice the ol' "so you know what I found out last week..." as you learn about the manifold benefits of a food dehydrator.
+Or perhaps a recounting of a recent worst travel experience as others dogpile on with
+their own worst travel experience.
+A chance to get to know you.
+
+
+### Working early, or late, on a different time zone, or perhaps a different internal clock
+When a university friend group is atomized across most of the time zones in North America (sorry [Newfoundland](https://en.wikipedia.org/wiki/Newfoundland_Time_Zone), we are working on it), people tend to work their own hours.
+So long as you work those job hours, the rest of the time is yours to work when you want.
+Most of us interact with humans nearby to us, and so often align our schedules to the local nine-to-five.
+When an east coaster is working at nine, the only other people around beforehand are likely to be east coasters!
+And if it is the late evening on the west coast, it is likely only those in pacific, or perhaps mountain time, will be around.
+Regardless of who you are friends with with, you will end up offering support, rubber ducking, or perhaps reading resumés of your temporally-aligned peers.
+
+## So what?
+What do these patterns hold in common?
+Some are planned catch-ups, others are planned work, but all involve unplanned interactions.
+They happen repeatedly.
+And so we have checked off two of three criteria that [some sociologists (paywalled but worth the money — good writing deserves recognition](https://www.nytimes.com/2012/07/15/fashion/the-challenge-of-making-friends-as-an-adult.html)) deem the key components of creating new friendships.
+These key components are: Proximity; repeated, unplanned interactions; and a setting that encourages people to let their guard down and confide in each other.
+
+The common theme of our online connections are repeated, unplanned interactions.
+What happens before a meeting starts is not prescribed, and
+neither are the interactions.
+This is time for humans to be human.
+The same goes for late hours (before or after) on the group chat.
