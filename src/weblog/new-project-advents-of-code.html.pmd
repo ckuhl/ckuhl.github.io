@@ -1,0 +1,38 @@
+#lang pollen
+
+◊(define-meta title "New project: Advents of Code")
+◊(define-meta date "2023-09-04")
+◊(define-meta summary "tmp")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+
+Recently I was chatting with a friend who mentioned that she had recently started working on coding questions on this cool site called [Leetcode](https://en.wikipedia.org/wiki/LeetCode), have I heard of it?
+
+Yes.
+Yes I have.
+
+While I do not particularly want to revisit my university grind, Cali-or-bust grind, internship grind days, this did get me thinking -- I do actually miss some of the programming-for-fun days I had in off semesters in university.
+
+Not enough to go back to grinding Leetcode.
+Yet I do miss the fun and whimsy of just doing small problems.
+Maybe it is a part of my gradual transformation into Old Man, alongside my newfound passion for crosswords (there is some fun circularity here, with one of my first programming problems ever in university being a crossword solver).
+Doing things, for fun, is still a process I am working on these short few years out of university.
+I like the pragmatism of Leetcode, but if not Leetcode, what?
+
+Through departures and arrivals, I have become the social coordinator for [Advent of Code](https://en.wikipedia.org/wiki/Advent_of_Code) at work.
+Three years running I have helped kick it off, tailed off on the daily coding challenges as time off overrides time thinking about code, and watched others cross the finish line.
+
+Anyways, where was I?
+Oh, yeah, no to Leetcode, yes to Advent of Code.
+While looking it over the other night, I realized that the number of questions is like super tractable?
+It has only been going on since 2015.
+At the time of writing, that is eight years and thus 400 stars worth of questions.
+That is a completely doable number of questions.
+I may not be smart enough to be on the leaderboard, but I can absolutely finish one month's worth of questions in twelve month's time.
+
+So that's my new project.
+Super informal, super casual, and with a completely normal human goal in mind: The complete domination of the (private) leaderboard I have set up.
+Starting with my existing 46/400, and counting up by 50 per year.
+Let's see how long it takes me to hit 100%.
