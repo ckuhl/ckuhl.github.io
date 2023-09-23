@@ -44,6 +44,7 @@ The basic structure is thus:
 - [GifCities (as provided by Archive.org)](https://gifcities.org/)
 - [Ironwood Solar](https://solar.leo32345.com/)
     - Similarly: [Solar Low Tech Magazine](https://solar.lowtechmagazine.com/)
+- [Pixel See](https://pixelsea.neocities.org): 32x32 and 88x31 gifs
 
 
 ### Other Racket sites
