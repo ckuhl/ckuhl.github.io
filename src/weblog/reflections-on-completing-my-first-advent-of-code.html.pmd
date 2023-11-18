@@ -1,0 +1,67 @@
+#lang pollen
+
+◊(define-meta title "Reflections on Completing My First Advent of Code")
+◊(define-meta date "2023-09-17")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+A few months after embarking on a foolish plan to complete all of the [Advents of Code], I completed my first full Advent of Code.
+In part this took as long as it did due to other considerations (Thanksgiving, travel, Human Existence Activities).
+In part it took a while to understand not just the problems but how to approach the problems.
+Following this I have a few takeaways from my first full completion, benefitting from comparisons to previous failed attempts.
+
+
+## Write what you know
+
+The greatest headwind you can set for yourself when trying something new is to make your task harder than it needs to be.
+If you have never completed Advent of Code before, use your most familiar language.
+For me this was Python, and so I worked through it using Python3.11.
+
+In comparison to Racket, where I am far less familiar with the standard library, this was a breeze.
+I know how dictionaries, lists, and other basic data structures work.
+For example in Racket one tests for membership in a set with `set-member?` but looks for items in a hash (also known as a dictionary in Python) with `hash-ref`.
+These differences are minor but present a barrier to starting and keeping momentum.
+Leave hard mode for once you win on easy mode - it is called New Game Plus for a reason.
+
+
+## Slow and steady
+
+Advent of Code releases one problem per day.
+This can be challenging for mere mortals that have other things planned (working a career, spending time with family, and Other Miscellaneous Human Activities) for their month of December.
+Previous attempts were a part of a group, where it was a race to see who could be first.
+Failing to get first meant I had lost just as bad as not completing at all.
+Reframing this challenge into one of time (much like the overarching [Advents of Code] I set for myself) meant that even if I missed a day, there was still a reason to continue.
+
+
+## `TODO` is a cheat code
+
+Perfectionism may be a universal part of writing code.
+However the old saying has an order for a reason:
+
+> Make it work, make it right, make it fast
+
+You cannot write correct code without first having code that runs.
+You cannot have optimal code without first having code that works.
+
+For myself, at least, stubbing in (many) `TODO` statements throughout the code was a great way to circumvent that inner perfectionism.
+Instead of ignoring it, I acknowledge it - "yes, we need to do that, but the priority right now is getting things done."
+
+
+## Know why you are doing it
+
+Linked to the above "slow and steady" approach, work without motivation is doomed to fail.
+In the past few years I have finally given myself permission to "give up" on a book I am not enjoying.
+Previously I would butt my head against a difficult novel until I gave up reading, or else worked through it over such a long period that by the end I recalled nothing of the beginning at all.
+Accepting that if something is not for me, it is okay to put it down was a hard habit to break but I am better off for it.
+I have much more times to read books I enjoy.
+
+Advent of Code occupied a similar place for me.
+I never regretted previous attempts or let previous failures stop me from trying the next year.
+The key to success is to recognize that Advent of Code is meant for fun.
+If there is no joy in it, please put it down.
+There are many things you could be doing instead that will make you as happy as it will make you better.
+
+
+◊; References
+[Advents of Code]: ./advents-of-code.html

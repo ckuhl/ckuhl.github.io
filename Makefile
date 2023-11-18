@@ -1,16 +1,19 @@
-docs/: src/  ## Build site, default target
+.DEFAULT_GOAL=help
+
+docs: src/  ## Build site, default target
 	raco pollen render --recursive ./src
 	raco pollen publish ./src ./docs
 
 .PHONY: clean dev local-workflow help
 
 clean:  ## Remove rendered HTML files
-	rm -rf ./build
-	rm -rf ./docs
-	rm -rf ./src/**/*.html
-	rm -rf ./src/**/*.xml
-	rm -rf ./src/compiled
-	rm -rf ./src/**/compiled
+	rm -rf build
+	rm -rf docs
+	rm -rf src/**/*.html
+	rm -rf src/**/*.xml
+	rm -rf src/compiled
+	rm -rf src/**/compiled
+	rm -rf **/*_pm.zo
 	rm -rf **/*.*~
 
 dev:  ## Local development site
@@ -18,6 +21,9 @@ dev:  ## Local development site
 
 local-workflow:  ## Run GitHub Actions locally
 	act --container-architecture linux/amd64
+
+setup:  ## Install necessary dependencies
+	raco pkg install --auto pollen
 
 help:  ## Print this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \

@@ -19,6 +19,8 @@ about.html
 	weblog/observations-on-remote-interactions.html
 	◊; 2023-09-04
 	weblog/new-project-advents-of-code.html
+	◊; 2023-11-17
+	weblog/reflections-on-completing-my-first-advent-of-code.html
 }
 ◊et-cetera/index.html{
 	et-cetera/self-style-guide.html
