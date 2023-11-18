@@ -13,7 +13,7 @@
 ;; This is because 'root is not allowed to be a direct child of 'body
 ;; Using a custom element is the best way to avoid causing any problems here
 (define (root . elements)
-   (txexpr 'div empty elements))
+  (txexpr 'div empty elements))
 
 ; Yoinked from:
 ;  https://github.com/rymaju/pollen-ryanjung.dev/blob/fc506d2292703b0086025cc72abe78cc3adad4e2/src/pollen.rkt#L15-L18
@@ -31,24 +31,19 @@
   (define link-name
     (string-join
      (list
-     (select-from-metas 'date node)
-     (select-from-metas 'title node))
-    ": "))
+      (select-from-metas 'date node)
+      (select-from-metas 'title node))
+     ": "))
   (link (string-append "/" node-string) link-name)
-)
+  )
 
 ; Modified from https://github.com/malcolmstill/mstill.io/blob/master/blog/pollen.rkt
 ; Converts a string "2015-12-19" or "2015-12-19 16:02" to a Racket date value
 (define (datestring->date datetime)
   (match (string-split datetime)
     [(list date time)
-      (match
-        (map string->number (append (string-split date "-") (string-split time ":")))
-        [(list year month day hour minutes) (seconds->date (find-seconds 0 minutes hour day month year))])]
-    [(list date) (match (map string->number (string-split date "-"))
-                   [(list year month day) (seconds->date (find-seconds 0
-                                                                       0
-                                                                       0
-                                                                       day
-                                                                       month
-                                                                       year))])]))
+     (match (map string->number (append (string-split date "-") (string-split time ":")))
+       [(list year month day hour minutes) (seconds->date (find-seconds 0 minutes hour day month year))])]
+    [(list date)
+     (match (map string->number (string-split date "-"))
+       [(list year month day) (seconds->date (find-seconds 0 0 0 day month year))])]))
