@@ -10,10 +10,10 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
     - name: Check out repository
-      uses: actions/checkout@master
+      uses: actions/checkout@v4
 
     - name: Install Racket
-      uses: Bogdanp/setup-racket@v1.10
+      uses: Bogdanp/setup-racket@v1.11
       with:
         architecture: 'x64'
         distribution: 'full'
@@ -21,34 +21,30 @@ jobs:
         version: 'stable'
 
     - name: Install Pollen
-      run: raco pkg install --auto pollen
+      run: make setup
 
     - name: Build site
-      run: make
+      run: make docs
 
     - name: Upload pages artifact
       id: upload
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v2
       with:
         path: docs
 
 
   Publish:
-    # Add a dependency to the build job
+    runs-on: ubuntu-latest
     needs: Build
 
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write
+      id-token: write
 
-    # Deploy to the github-pages environment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

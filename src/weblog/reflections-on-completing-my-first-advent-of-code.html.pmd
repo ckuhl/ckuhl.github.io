@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Reflections on Completing My First Advent of Code")
-◊(define-meta date "2023-09-17")
+◊(define-meta date "2023-11-17")
 
 # ◊(select-from-metas 'title (current-metas))
 <time>◊(select-from-metas 'date (current-metas))</time>
