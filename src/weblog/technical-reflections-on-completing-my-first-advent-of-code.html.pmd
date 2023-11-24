@@ -1,0 +1,116 @@
+#lang pollen
+
+◊(define-meta title "Technical reflections on completing Advent of Code")
+◊(define-meta date "2023-11-23")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+While drafting my reflections on [completing my first Advent of Code], I had originally commingled nontechnical and technical thoughts.
+Reframing my writing as a letter to a friend, I realized I really wanted to write two different emails.
+The first was a "keep your chin up!" sort of email.
+You can do it!
+It is possible!
+Rah rah!
+
+The second was a deeper set of technical notes to a friend that might be considering shooting for completing a full Advent of Code.
+This is the latter of those two messages.
+Both are born from the same root---notes comparing previous failures to an eventual success---but with different focuses.
+
+
+## Make the computer do more work
+
+Inefficient code is only bad if it does not complete the task it is expected to do.
+Of course, if you write inefficient code and pass it off as efficient, ehhh - that is not doing what it is expected to do.
+That may not fly.
+
+There is the tired and yet true saying:
+
+> If it is dumb and it works, it is not dumb.
+
+If you are embarking on an efficiency challenge with Advent of Code, then sure - strive for efficiency.
+Even in that approach you should consider that writing an inefficient solution first will give you a solution, which is another data point you can use for optimizing your code, or for rewriting from scratch.
+More test cases mean fewer chances for code that works by chance (right up until you refactor it).
+
+
+## You are not too smart to use the examples
+
+Following on that train, the use of examples is twofold.
+The first is that you can detect simple errors in your code earlier.
+Instead of fumbling around submitting incorrect answer after incorrect answer, I could check the example and wait until it works to submit the wrong answer.
+
+Even before the final "solve the problem" step you can still benefit from using the examples.
+Oftentimes AoC will step through the example input and show you how the code works.
+A few well-placed `print` statements will show you how _your_ code works.
+From that you can detect any divergence.
+Tracing through your own code and understanding how it is actually working can be greatly edifying.
+More than once I have written working yet surprising code, and I only noticed because I chose to trace the examples.
+
+
+## REPLs and REPL-like development is slick
+
+Again building on the above, writing code by sequentially modifying an input is magical.
+Starting with the (example) input, you can dump the whole of it into your terminal.
+This does not blow away the previous input, and so you can compare current to past steps without scrolling back.
+You can start making incremental modifications to it, nudging the container ship until nudge-by-nudge it points at exactly the direction you are looking for.
+
+The nudging goes both ways.
+If you make an adjustment and it looks odd, you can immediately correct rather than breaking out the debugger thirty-eight steps later.
+
+
+## Note to self: Future me will never be as smart as present me
+
+There is little that hurts more than looking at the optimistic exuberance of a comment on some incomplete code that reads something like:
+
+> Did the hard part, now just give it the ol' razzle dazzle.
+
+Unfortunately I do not know what the razzle dazzle is, though I would love to know.
+It was probably some very clever code that would impress a lot of people.
+
+
+## Do not be fancy
+
+The structure of my past attempts was rather overwrought.
+Full ISO8601 time stamps in the file name.
+Files places in double-digit day directories.
+A year in the top level directory.
+
+It turns out that not only is this redundant, it is annoying to work with.
+The day is specified in both the file name and the directory.
+The month is obvious - Advent of Code is an advent calendar, and thus occurs in December.
+The year is reduplicated by the top level directory.
+
+We know there will be exactly twenty-five problems for the year ahead.
+We probably do not need daily subdirectories, and probably do not need the year in both the directory and the file name.
+
+As I have learned through practice, structure is itself a type of technical debt.
+Use the minimal structure required, and when it becomes annoying, you will find it much easier to add more structure than to remove the existing structure.
+
+
+## Finally, some technical thoughts
+
+### Simpler maps
+This goes back to making the computer work for you.
+Rarely will you be presented with an input so complex you must use a two-dimensional array to represent it.
+It is more likely that reading such an array into a mapping of (x, y) to values will much easier to work with.
+Not only will out-of-bounds accesses be easier, but convolutions on the original topic (be it additional or recursive dimensions) will be much easier.
+If it becomes too slow, well, _then_ you can start picking a different path forward.
+
+
+### Brute Force Solution
+For a shacking amount of problems, Breadth-First Search can solve the problem as well as any other approach.
+This returns again to the previous section's observation: problems are not usually "large."
+Unless you are coding on an old computer, in which case you are more than capable of dealing with such problems in the appropriate way.
+
+
+### Google-Fu will be required
+
+At least one problem will not be a street-fighting day-job software-type problem.
+Make clever observations, and do not be afraid to use a search engine.
+Looking for problems that use prime numbers and want a certain recurrence is not a bad thing.
+That is how the world works.
+That is how a clever person solves problems.
+Of course, if you are searching "Advent of Code 20XX day XX solutions", well, just be honest to yourself about what you are learning.
+
+
+[completing my first Advent of Code]: ../reflections-on-completing-my-first-advent-of-code.html

@@ -21,6 +21,8 @@ about.html
 	weblog/new-project-advents-of-code.html
 	◊; 2023-11-17
 	weblog/reflections-on-completing-my-first-advent-of-code.html
+	◊; 2023-11-23
+	weblog/technical-reflections-on-completing-my-first-advent-of-code.html
 }
 ◊et-cetera/index.html{
 	et-cetera/self-style-guide.html
