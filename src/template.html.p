@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-CA">
 <head>
-	<meta charset="utf-8">
-	<title>◊(hash-ref metas 'title)</title>
+        <meta charset="utf-8">
+        <title>◊(hash-ref metas 'title)</title>
 	<link rel="stylesheet" type="text/css" media="all" href="/css/main.css">
 </head>
 <body>
@@ -23,9 +23,9 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 <hr/>
 </header>
 
-<content>
+<main>
 	◊(->html doc)
-</content>
+</main>
 
 <footer>
 <hr/>
