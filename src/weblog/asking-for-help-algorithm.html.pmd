@@ -64,7 +64,7 @@ Did it not produce the output you were expecting?
 Perhaps someone has seen the error before, and knows a quick trick to work around it.
 
 
-### [Repeat: Steps 2 and 3 as needed]
+### (Repeat: Steps 2 and 3 as needed)
 There is more than one way to solve a problem.
 Showing which have gone down avoids the back-and-forth to answer questions you already know.
 It also shows that you are invested in this work.
@@ -168,7 +168,7 @@ In this way, writing is the programming to speaking's pseudocode.
 
 ### So what?
 
-Recently at work we read [The Missing README](https://themissingreadme.com/).
+Recently at work we read [The Missing README].
 This is what cued me in to the idea that maybe other people are thinking these same thoughts.
 Technical problems have technical answers.
 You can measure, calculate, and optimize.
@@ -179,3 +179,5 @@ Perhaps this solution works where others have not, for others?
 The most compelling motivation is thus: I am always curious to hear more about the "human algorithms" other people have discovered.
 I am also curious to know what others have seen or experienced, derived or composed from their own lived experience.
 What easier way to find these others than to write about my experiences and invite discussion into my home?
+
+[The Missing README]: https://themissingreadme.com/
