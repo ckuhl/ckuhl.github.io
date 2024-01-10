@@ -1,12 +1,13 @@
 #lang racket
 
 (require
-  racket/date
+  pollen/core
   pollen/tag
   pollen/template
-  pollen/core
-  txexpr
-  sugar/coerce)
+  pollen/pagetree
+  racket/date
+  sugar/coerce
+  txexpr)
 (provide (all-defined-out))
 
 ; Alias the 'root element to actually be 'pollen
@@ -47,3 +48,29 @@
     [(list date)
      (match (map string->number (string-split date "-"))
        [(list year month day) (seconds->date (find-seconds 0 0 0 day month year))])]))
+
+; Helper: Combine `next` with `sibling` (for terminal nodes)
+(define (next-sibling p)
+  (let* ([sib (siblings p)]
+         [next-index (add1 (index-of sib p))])
+    (eprintf "Children: ~v~n" (children p))
+    (cond
+      ; Not great: I want to return false if and only if this does not return false
+      ; FIXME: This doesn't currently work for parentier stuff
+      ; Really what I care about is signifying _where_ the next content exists within
+      ; Or do I really care about that?
+      [(not (equal? (children p) #f)) #f]
+      [(>= next-index (length sib)) #f]
+      [else (list-ref sib next-index)])))
+
+; Helper: Combine `prev` with `sibling` (for terminal nodes)
+(define (prev-sibling p)
+  (let* ([sib (siblings p)]
+         [prev-index (sub1 (index-of sib p))])
+    (eprintf "Children: ~v~n" (children p))
+    (cond
+      ; Not great: I want to return false if and only if this does not return false
+      ; FIXME: This doesn't currently work for parentier stuff
+      [(not (equal? (children p) #f)) #f]
+      [(< prev-index 0) #f]
+      [else (list-ref sib prev-index)])))

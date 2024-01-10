@@ -7,19 +7,7 @@
 </head>
 <body>
 <header>
-<!--
-FIXME: Need to figure out how to actually do naviagation. Eventually.
-<div class="navigation">
-◊when/splice[(previous here)]{
-	<span>&larr; ◊|(->html (node->link (previous here)))|</span>
-}
-	<span>&uarr; <a href="/">Home</a></span>
-◊when/splice[(next here)]{
-	<span>◊|(->html (node->link (next here)))| &rarr;</span>
-}
-
-</div>
--->
+<div class="navigation"></div>
 <hr/>
 </header>
 
@@ -28,6 +16,22 @@ FIXME: Need to figure out how to actually do naviagation. Eventually.
 </main>
 
 <footer>
+◊when/splice[(not (eq? #f (parent here)))]{
+	<hr/>
+}
+<div>
+<!-- TODO: Fix this
+◊when/splice[(and (prev-sibling here) (eq? #f (children here)))]{
+	<span>◊|(->html (node->link (previous here)))| &larr;</span>
+}
+◊when/splice[(not (eq? #f (parent here)))]{
+	<span>&uarr; ◊|(->html (node->link (parent here)))|</span>
+}
+◊when/splice[(and (prev-sibling here) (eq? #f (children here)))]{
+	<span>&rarr; ◊|(->html (node->link (next here)))|</span>
+}
+-->
+</div>
 <hr/>
 <div>
 	<a href="https://validator.w3.org/check/referer">

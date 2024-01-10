@@ -69,6 +69,13 @@ body header, body footer {
 	text-align: center;
 }
 
+footer div {
+	/* Goal here: Keep the navigation controls in the footer on one line */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 /*
 FIXME: This is a hack-ish. Should use flexbox instead
 740 = 640px above + 25 right padding + 75 left padding
