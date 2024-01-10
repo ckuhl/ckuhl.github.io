@@ -1,0 +1,108 @@
+#lang pollen
+
+◊(define-meta title "2023 in small chunks")
+◊(define-meta date "2024-01-09")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+Reflecting on the past year.
+Feels like a cool, popular thing to do on a web log.
+Where to start, how to organize, there are a lot of avenues to go down researching.
+All fun tar pits to go careening into at maximum velocity.
+On second thought, we do not need to research that.
+
+Instead of researching, I am going to slice and dice my year by a dimension that best captures the technological things I have done: things.
+
+## Things I made
+### This web log!
+It was about a year ago I made the CNAME to this site, thus making it "real" sometime between early December 2022 and early January 2023, although I did not [write about it until April].
+Since then there has been improvements in a number of different dimensions.
+There is (some) written content, I have learned much about the language Racket and the library Pollen, I have somehow learned about Markdown despite many years of using it, and many other self-development things.
+More importantly, there have been a number of things that have not improved, as I focus on the web log as a writing project instead of perennially working on this metaphorical project car.
+
+Compared to past attempts, I think it would be easy to attribute the relative success to mindset alone.
+That feels unfair to my past self, as the truth is that success is also likely linked to not being in an undergraduate program anymore.
+Work starts at nine(ish) and ends at five(ish) and then I have free time.
+Weekends?
+All free time.
+It is a crazy world out there compared to undergraduate.
+With the combined power of free time and mindset, I have been able to post semi-regularly.
+My initial goal was one-post-per-month, and though I missed that mark, I did manage to get ten posts up.
+If you asked me in university, 85% is a great grade, and I will not complain here either.
+Good is the goal here, not perfect.
+
+## Things I learned
+### Writing is a lot of work
+Editing is also a lot of work.
+It turns out that, although easy to read someone else's writing and comment on it, it is difficult to persist a vague idea into some more corporeal form.
+I have a newfound appreciation for taking something ambiguous and turning it into something slightly-less-ambiguous.
+
+### GitHub Actions are not awful
+I previously approached all CI tooling as vendor lock-in, thinly disguised as convenience.
+I still believe the vast majority of usage is such.
+However if you are proactive in setting up administrative scripts for your projects, you can use GitHub Actions and similar tooling as a wrapper to run said tooling automatically.
+I think if you approach it as improved pre- and post-commit hooks, you will not be frustrated by GitHub Actions.
+In fact, I have a newfound appreciation for such tooling for forcing me to identify all dependencies of my project, and not just assume everyone has the same environment I do.
+Thinking through everything and putting it in either a Makefile or a GitHub Workflow means I have documented not just the dependencies, but the versions too.
+
+## Things I did
+### Writing
+Finally, around November of the 2023, I finally had the opportunity to share the content I had written for this web log.
+Having written about some approaches to [completing a full Advent of Code], I could share this out instead of re-writing (or more accurately, not writing) advice for this current year.
+
+I am disappointed I took this long to share out content from my web log.
+Alternately, I am disappointed it took me this long to write something I could share out.
+Completing that feedback look of writing-revising-sharing-feedback impacted changed my outlook on writing.
+Not only is it valuable to consolidate your own thoughts, but if you find you are repeating yourself, you can instead revise yourself with what you have written. Further, it is genuinely enjoyable to have content available in the most accessible format.
+No more wrangling between Pages and Office, or Google Drive permissions, or emails to different addresses.
+The content works.
+
+### Advents of Code
+I started a project in the autumn to work through previous incarnations of Advent of Code.
+Calling it [Advents of Code] (because everything needs a cool name), I would take notes and write to myself about this as I went.
+This has been useful both for the most-recent approach to Advent of Code (in Lua, nonetheless) and in helping out others that are competing with me on my private leaderboard.
+
+## Things I Will Do (maybe)
+New Year's resolutions have always seemed funny to me.
+Of all the times to start a new habit, why the bleariest, darkest time of the year? How am I supposed to make good life choices when it is -35ºC outside this weekend? At the same time, it is nice to have a prompt to stop and look back at the year behind and at the year ahead.
+Setting goals you are likely to meet anyways is a nice way to encourage yourself to keep going.
+I have yet to actually read 52 books in a year, but I still read more than I would otherwise when I refer back to my goals.
+
+### Writing
+The more I write, the more I want to write.
+Writing is a whetstone for the mind.
+It forces one to consider what they are saying and how they are saying it.
+Clarity goes under a microscope and ambiguity is magnified, and so you learn to identify gaps in your understanding.
+
+The goal really is writing in a few ways.
+Writing more web log posts, to grind out practice writing.
+Writing more web log posts, to grind out more practice editing as well.
+Writing different types of web log posts, to practice different ways of writing.
+Writing some long-form content, to work on writing coherent and continuous flows of thought.
+Maybe even writing some fiction, to exercise other parts of the brain.
+
+Based on not-quite-attaining my goal of twelve posts for 2023, I will be setting a new goal of not-quite-attaining twenty-four posts for 2024.
+
+### Dumb Projects
+Something I have been discussing with a friend of mine recently.
+It is easy to get sidelined thinking that all programming has to be fun, or serious, or made with a business purpose in mind.
+However I have this power to make whatever software I want, given enough time.
+Recently I saw a post about making [small games], which reminded me about [a silly game] I made for a high-school programming class.
+It is fun to create something just to creae something, so why not?
+
+
+## Now what?
+Back to writing for me.
+Once I have written, and written more, I will post the stuff I have been meaning to post.
+Most of the subsections here, both past and future, are topics I have been meaning to write more on.
+So maybe I will update this page to link back to those.
+
+Who knows what the future will hold?
+
+
+[write about it until April]: /weblog/web-site.html
+[completing a full Advent of Code]: /weblog/reflections-on-completing-my-first-advent-of-code.html
+[Advents of Code]: /weblog/new-project-advents-of-code.html
+[a silly game]: https://github.com/ckuhl/ICS4U-Tile-Based-Game
+[small games]: https://abagames.github.io/joys-of-small-game-development-en/fun_to_make_small_games.html 
