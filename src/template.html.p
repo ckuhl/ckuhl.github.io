@@ -27,7 +27,7 @@
 ◊when/splice[(not (eq? #f (parent here)))]{
 	<span>&uarr; ◊|(->html (node->link (parent here)))|</span>
 }
-◊when/splice[(and (prev-sibling here) (eq? #f (children here)))]{
+◊when/splice[(and (next-sibling here) (eq? #f (children here)))]{
 	<span>&rarr; ◊|(->html (node->link (next here)))|</span>
 }
 -->
