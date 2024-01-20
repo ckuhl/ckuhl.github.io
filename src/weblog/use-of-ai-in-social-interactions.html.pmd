@@ -1,0 +1,63 @@
+#lang pollen
+
+◊(define-meta title "The use of AI in social interactions")
+◊(define-meta date "2024-01-19")
+◊(define-meta recipient "a longtime friend")
+
+# ◊(select-from-metas 'title (current-metas))
+◊; <!-- TODO: Rip this out into a generalized page formatter -->
+<div style="display: flex; justify-content: space-between;">
+◊; <subtitle><span style="font-style: italic;">A letter to</span> ◊(select-from-metas 'recipient (current-metas)),</subtitle>
+<time>◊(select-from-metas 'date (current-metas))</time>
+</div>
+
+As you know, AI has been a whole big thing.
+It has been interesting to watch it roll in waves, first something only the ultra-nerds talk about, then something most programmers are aware of, then it starts to appear in programming tools, and finally to where non-technical people I know are using it in their business life.
+It is a neat tool, though I personally do not really see a huge appeal in the work I do.
+Most of my time is spent thinking and understanding, not writing.
+That is to say, the bottleneck here is my brain, not my fingers.
+Still I have had a chance to play around with various models, and I can totally see the value.
+I have even considered adapting and using some tools for future projects.
+Unfortunately the bottleneck for future projects is neither my brain nor my fingers, but my free time.
+Social commitments take up time too!
+
+Social interactions are a game made up of games.
+Call and repeat, variations on a theme, tell me a story, there are so many different ways people can go back-and-forth as they let off steam.
+There is some degree of competition involved in these games.
+Not direct competition, but friends competing with friends to make each other laugh, or to tell the most enrapturing story.
+This competition is also where you get to know people.
+Just think of card games like Apples to Apples, or Cards Against Humanity depending on your company.
+The word choice and selection tells you a little something about the people you are playing with.
+
+Online interactions grow their own weird games to add to the social game.
+Chat platforms like Discord and Slack allow you to add custom emoticons, enabling a whole subculture niche and contextual communication that regular Unicode does not convey.
+Being on a computer of some sort also gives access to a rudimentary image editor.
+Be it MS Paint on Microsoft platforms, or Preview.app on macOS, or other integrated editors in iOS and Android -- anyone with a connection can edit an image.
+With that, anyone can make poor quality memes.
+Or at least I do.
+
+Given a conversation about what to do when your partner makes too much kimchi, it can be fast to find an image of a mug, an image of kimchi, cut an oval of one and paste on to the other, and superimpose text saying "Don't talk to me before I've had my kimchi."
+Funny?
+Maybe not.
+But an invitation for others to try their own hand at making their own poor quality image edits.
+A game within a game.
+
+In the past half year or so, I have noticed more people using AI as a part of social interactions.
+Friends, peers, coworkers, family members, it is a broad crosscut of the people I know.
+
+> "Let's ask ChatGPT what to do."
+
+> "I asked ChatGPT to generate a poem".
+
+> "I had Midjourney generate a picture of kimchi in a mug."
+
+The novelty that AI presents can be seductive.
+When I first started playing with some local LLMs, it was very tempting to pester it for "generate me an X about Y."
+A little bit of typing, and something decent and surprising appears before you.
+When you do not know what to say in a conversation, why not ask an AI?
+
+I do not know if this is actually a problem.
+Maybe people will fall out of love with asking an AI for things they do not really want.
+Maybe I am off the mark entirely, and this is not a concern, but rather an evolution of social interactions.
+
+I just want to feel like I am interacting with the same person when we face each other in the world, naked without our augments.
