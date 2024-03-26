@@ -1,0 +1,14 @@
+#lang pollen
+
+◊(define-meta title "But maybe, I could write less")
+◊(define-meta date "2024-03-25")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+I wrote a very long thing, but I still did not like it.
+Some of my peers write long things, but some of them post the occasional thought or sentence.
+When I try to write long things, I find myself waiting longer between times I write.
+I want to write more, but I end up writing less.
+But maybe, I could write less.
+
