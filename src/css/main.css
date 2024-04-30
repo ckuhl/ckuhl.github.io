@@ -47,7 +47,8 @@ TODO: Fix the way styles are scoped to better reflect the document structure.
 body header, body main, body footer {
 	display: block;
 	background-color: #ffffff;
-	background-image: url('/images/journal_bk.gif');
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+		url('/images/journal_bk.gif');
 	background-repeat: repeat-y;
 	padding: 25px 25px 25px 75px;
 	width: 640px;

@@ -32,15 +32,19 @@ The basic structure is thus:
         - Or at least, well enough that I understand it
     - References to sites I think are neat!
 - Style points:
-    - Work on / fix the nav bar at the top
+    - Update background - lined paper is amusing but suffers from legibility
+    - Work on / fix the nav bar at the bottom
     - More totally radical 88x31px footer images
 - Project structure:
     - Can / should I store static content separate from dynamic content?
     - e.g. specially `.gitignore` dynamically generated pages and store the static pages in `~/docs`
-
+- Internals:
+    - Fix the way page tree references are done
+    - Fix the generation of navigation elements by notional sibling
+        - e.g. "Next X article, but not next X in the page tree"
 
 ## Inspirations
-### Gif content
+### GIF content
 - [Random content mirrored from Geocities]
 - [GifCities (as provided by Archive.org)]
 - [Pixel See] for 32x32 and 88x31 gifs

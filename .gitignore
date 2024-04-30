@@ -12,3 +12,4 @@ src/**/*.html
 # Compiled files (i.e. from Racket and Pollen)
 compiled/
 *.*~
+

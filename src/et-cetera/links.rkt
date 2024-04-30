@@ -14,4 +14,9 @@
   (title . "nechnif.net: A year at the South Pole - 2017/18")
   (note . "One person's experiences working at the South Pole for a year")
 ))
+(make-hash '(
+  (url . "https://www.jamisbuck.org/mazes/")
+  (title . "Maze Algorithms")
+  (note . "Visual representations of how various maze algorithms function")
+))
 ))

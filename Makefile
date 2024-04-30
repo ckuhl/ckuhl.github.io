@@ -1,6 +1,6 @@
 .DEFAULT_GOAL=help
 
-docs: src/  ## Build site, default target
+docs: src/  ## Build static content, write it into `./docs`
 	raco pollen render --recursive ./src
 	raco pollen publish ./src ./docs
 
