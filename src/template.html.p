@@ -43,12 +43,12 @@
 </div>
 <div>
 	<small>
-		In lieu of using Google Analytics, I have adopted an honour system;
+		In lieu of Google Analytics, please send an email with irrelevant personal information to <code>analytics@</code>.
 	</small>
-	<br/>
-	<small>
-		Please send an email with irrelevant personal information to <code>analytics@</code>.
-	</small>
+        <br/>
+        <small>
+                For less information on this, read the <a href="/privacy-policy.html">privacy policy</a>
+        </small>
 </div>
 </footer>
 
