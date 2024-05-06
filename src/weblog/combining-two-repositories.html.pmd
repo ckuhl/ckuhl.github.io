@@ -1,0 +1,41 @@
+#lang pollen
+
+◊(define-meta title "Combining Two Repositories")
+◊(define-meta date "2024-05-05")
+
+# ◊(select-from-metas 'title (current-metas))
+<time>◊(select-from-metas 'date (current-metas))</time>
+
+It often feels like using git is like playing jazz music.
+Jazz is when you play wrong notes on purpose and it sounds cool.
+Except if you try to do this at home, you find out that playing the wrong notes on purpose just sounds awful.
+While git gives you the tools to do whatever you want, if you try to do whatever you want, it ends up sounding awful (the discordant tones of MERGE CONFLICT suddenly reach the ears).
+
+In university I had a single mono-repo I used for all of my classes and assignments. This presented a problem when I started my first group project, and suddenly had to share a repository with other people.
+Academic integrity dictated that I not share my solutions to other assignments, present or past, with anyone else.
+Yet the monorepo demanded wholeness.
+How could I square this circle?
+
+The obvious solution is to copy-paste code from the group project into the monorepo at the end of the semester.
+This retains the code at the end of the project, but I wanted all of the data from my commit history for other projects.
+So how can I combine two git repositories into one, keeping the history of each?
+
+Well… you can merge the histories.
+Instead of adding the files as they are, add the files as they were and every point to now.
+It confused me a little to learn you could git merge unrelated histories, how do you merge things that have nothing to merge?
+
+```
+% ls
+mainRepository/ otherRepository/
+% cd mainRepository/
+% git remote add branch ../otherRepository
+% git fetch branch
+% git merge branch/main main
+fatal: refusing to merge unrelated histories
+% git merge branch/main main --allow-unrelated-histories
+Merge made by the 'ort' strategy.
+```
+
+With those odd steps taken, I had my two repositories merged.
+Through the powers of the Git Command Line, we had taken two repositories and made them one.
+Now kiss.
