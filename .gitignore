@@ -7,6 +7,7 @@ docs/
 
 # Compiled content that is placed in `./src`
 src/**/*.html
+!src/template.html
 **/feed.xml
 
 # Compiled files (i.e. from Racket and Pollen)
