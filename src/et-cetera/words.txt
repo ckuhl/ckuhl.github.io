@@ -33,6 +33,7 @@ betoken
 boojum
 bravura
 brisant
+brook (verb)
 buddelia
 calumny
 cantrip
@@ -45,6 +46,7 @@ caul
 cavil
 chancre
 chiliastic
+cholagogue
 choss
 chyron
 claque
@@ -55,8 +57,10 @@ columbarium
 commensalism
 concomitant
 corrigendum
+cosmogony
 cresset
 cumbered
+curtilage
 decedent
 declivity
 defease
@@ -64,8 +68,10 @@ deliquescent
 deportment
 deracinate
 descant
+desiderate
 desuetude
 desultory
+diaphanous
 dolour
 doryphore
 doyen
@@ -74,6 +80,7 @@ ductus
 dudgeon
 dyad
 effete
+effulgent
 eidolon
 elegiac
 encomia
@@ -83,7 +90,9 @@ epicanthic
 epiphenomenal
 epistolary
 espy
+exegesis
 exordium
+factotum
 faience
 farrago
 fatuous
@@ -107,6 +116,7 @@ harlequinade
 hawser
 hector (verb)
 helot
+hirsute
 hortatory
 houngans
 idiolect
@@ -122,9 +132,12 @@ insouciant
 intercalate
 internecine
 intumescent
+jeremiad
 kayfabe
 lachrymose
+lacuna
 lagniappe
+lethetic
 limn
 machicolation
 maieutic
@@ -134,6 +147,7 @@ merlon
 monomaniacal
 morass
 mordant
+moreish
 mulct
 multifarious
 munificence
@@ -141,7 +155,9 @@ neurasthenia
 noetic
 nosegay
 nugatory
+numinous
 obloquy
+obstreperous
 omphalos
 ontogeny
 opprobrium
@@ -153,6 +169,7 @@ paean
 palaver
 paradigmatic
 parquet
+parturition
 pecuniary
 pediment
 penetralia
@@ -180,6 +197,7 @@ propinquity
 propitious
 proprioception
 protuberances
+proxemics
 puissant
 pulchritudinous
 punctum
@@ -188,6 +206,7 @@ rapine
 ratiocination
 recreance
 remonstrance
+resection
 rickle
 rodomontade
 roggle
@@ -247,5 +266,6 @@ verdure
 veridical
 vituperation
 voluble
+wert
 whatchamacallum
 
